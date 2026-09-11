@@ -1,8 +1,8 @@
-"""One visual language for all ten projects.
+"""One visual language for all twenty projects.
 
-A portfolio of ten charts drawn ten different ways reads as ten weekend projects. The
-same palette, the same grid, the same caption convention reads as one body of work, and
-costs nothing but deciding once.
+A portfolio of twenty charts drawn twenty different ways reads as twenty weekend
+projects. The same palette, the same grid, the same caption convention reads as one body
+of work, and costs nothing but deciding once.
 
 Rules encoded here, each because the default is worse:
 

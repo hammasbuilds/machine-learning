@@ -1,7 +1,7 @@
 """Splitting and scoring, with the traps that make ordinary ML results wrong.
 
-Nine of the ten projects in this repo depend on getting one of these three things right,
-and all three are things a default `train_test_split` gets wrong:
+Most of the twenty projects in this repo depend on getting one of these three things
+right, and all three are things a default `train_test_split` gets wrong:
 
   1. **Time.** Shuffling a time series lets the model learn from next week to predict
      last week. The score is excellent and the model is worthless.

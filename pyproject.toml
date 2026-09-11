@@ -1,7 +1,7 @@
 [project]
 name = "machine-learning"
 version = "0.1.0"
-description = "Ten machine-learning projects on public data, each built around the mistake that makes it wrong."
+description = "Twenty machine-learning projects on public data, each built around the mistake that makes it wrong."
 requires-python = ">=3.11"
 dependencies = [
     "numpy>=1.26",
