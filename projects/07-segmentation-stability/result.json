@@ -1,0 +1,95 @@
+{
+  "customers": 5838,
+  "k_values_that_are_reproducible": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    9
+  ],
+  "assessment": [
+    {
+      "k": 2,
+      "silhouette": 0.4327,
+      "silhouette_shuffled": 0.2522,
+      "excess_over_null": 0.1806,
+      "reseed_ari": 0.9973,
+      "resample_ari": 0.9931,
+      "verdict": "stable and beats null"
+    },
+    {
+      "k": 3,
+      "silhouette": 0.3473,
+      "silhouette_shuffled": 0.2657,
+      "excess_over_null": 0.0816,
+      "reseed_ari": 0.9626,
+      "resample_ari": 0.9593,
+      "verdict": "stable and beats null"
+    },
+    {
+      "k": 4,
+      "silhouette": 0.3647,
+      "silhouette_shuffled": 0.2649,
+      "excess_over_null": 0.0997,
+      "reseed_ari": 0.969,
+      "resample_ari": 0.9572,
+      "verdict": "stable and beats null"
+    },
+    {
+      "k": 5,
+      "silhouette": 0.3325,
+      "silhouette_shuffled": 0.2489,
+      "excess_over_null": 0.0837,
+      "reseed_ari": 0.8471,
+      "resample_ari": 0.8316,
+      "verdict": "stable and beats null"
+    },
+    {
+      "k": 6,
+      "silhouette": 0.3319,
+      "silhouette_shuffled": 0.2487,
+      "excess_over_null": 0.0833,
+      "reseed_ari": 0.9544,
+      "resample_ari": 0.9276,
+      "verdict": "stable and beats null"
+    },
+    {
+      "k": 7,
+      "silhouette": 0.2965,
+      "silhouette_shuffled": 0.2496,
+      "excess_over_null": 0.0469,
+      "reseed_ari": 0.5952,
+      "resample_ari": 0.4981,
+      "verdict": "not reproducible"
+    },
+    {
+      "k": 8,
+      "silhouette": 0.3085,
+      "silhouette_shuffled": 0.243,
+      "excess_over_null": 0.0655,
+      "reseed_ari": 0.6576,
+      "resample_ari": 0.5501,
+      "verdict": "not reproducible"
+    },
+    {
+      "k": 9,
+      "silhouette": 0.2892,
+      "silhouette_shuffled": 0.2469,
+      "excess_over_null": 0.0423,
+      "reseed_ari": 0.8377,
+      "resample_ari": 0.8575,
+      "verdict": "stable and beats null"
+    },
+    {
+      "k": 10,
+      "silhouette": 0.28,
+      "silhouette_shuffled": 0.252,
+      "excess_over_null": 0.0279,
+      "reseed_ari": 0.7058,
+      "resample_ari": 0.7088,
+      "verdict": "not reproducible"
+    }
+  ],
+  "ari_k5_two_seeds": 0.9826
+}

@@ -1,0 +1,38 @@
+{
+  "product_months": 63011,
+  "products": 3739,
+  "estimates": [
+    {
+      "method": "Pooled across products",
+      "elasticity": -0.774,
+      "standard_error": 0.007,
+      "t": -108.54,
+      "observations": 63011,
+      "products": 3739,
+      "sign_is_sane": true
+    },
+    {
+      "method": "Within product (fixed effects)",
+      "elasticity": -1.974,
+      "standard_error": 0.013,
+      "t": -153.71,
+      "observations": 63011,
+      "products": 3739,
+      "sign_is_sane": true
+    },
+    {
+      "method": "Within product AND month",
+      "elasticity": -2.104,
+      "standard_error": 0.012,
+      "t": -168.54,
+      "observations": 63011,
+      "products": 3739,
+      "sign_is_sane": true
+    }
+  ],
+  "per_product": {
+    "products_with_own_estimate": 2953,
+    "median_elasticity": -2.525,
+    "share_downward_sloping": 0.8974
+  }
+}

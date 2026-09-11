@@ -1,0 +1,21 @@
+{
+  "invoice_lines": 1055823,
+  "unattributed_share": 0.2224,
+  "customers": 5876,
+  "mean_value": 2844.44,
+  "median_value": 854.82,
+  "mean_percentile": 0.7973,
+  "gini": 0.7363,
+  "one_time_buyer_share": 0.2435,
+  "revenue_share": {
+    "top_1pct": 0.3106,
+    "top_5pct": 0.5108,
+    "top_10pct": 0.6317,
+    "top_20pct": 0.7672,
+    "top_50pct": 0.9339
+  },
+  "month_1_retention": 0.2386,
+  "month_12_retention": 0.0964,
+  "dormant_repeat_customers": 1371,
+  "value_dormant": 1825825.43
+}

@@ -1,0 +1,137 @@
+{
+  "ai4i-2020-maintenance": {
+    "bytes": 522170,
+    "fetched": "2026-09-11T07:06:53+00:00",
+    "licence": "CC BY 4.0 (UCI ML Repository)",
+    "note": "UCI AI4I 2020: 10,000 machine cycles, five labelled failure modes, 3.4% failure rate. Imbalanced by construction, like the real thing.",
+    "path": "data\\raw\\ai4i-2020-maintenance.zip",
+    "sha256": "f601f14294bcf190f9d720676b7f0aea46a26cde9ab8ebc7b4f8174d9d26b252",
+    "url": "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip"
+  },
+  "cboe-vix-daily": {
+    "bytes": 481732,
+    "fetched": "2026-09-11T07:09:22+00:00",
+    "licence": "Public domain (CBOE publishes VIX history freely)",
+    "note": "CBOE VIX daily OHLC since 1990, 9,269 rows. The volatility-regime series.",
+    "path": "data\\raw\\cboe-vix-daily.csv",
+    "sha256": "76d2c97d7ac5aea18597eaca998a20314802d7f50f5111d5245dbf99b386d879",
+    "url": "https://raw.githubusercontent.com/datasets/finance-vix/main/data/vix-daily.csv"
+  },
+  "football-data-e0-1516": {
+    "bytes": 100656,
+    "fetched": "2026-09-11T06:59:38+00:00",
+    "licence": "Free to use with attribution (football-data.co.uk)",
+    "note": "English Premier League 2015/16: results and closing odds.",
+    "path": "data\\raw\\football-data-e0-1516.csv",
+    "sha256": "bd3502a18c38a1597fd9af62e2366b4015006d3528dd4d18b311bd6237bbc085",
+    "url": "https://www.football-data.co.uk/mmz4281/1516/E0.csv"
+  },
+  "football-data-e0-1617": {
+    "bytes": 99990,
+    "fetched": "2026-09-11T06:59:40+00:00",
+    "licence": "Free to use with attribution (football-data.co.uk)",
+    "note": "English Premier League 2016/17: results and closing odds.",
+    "path": "data\\raw\\football-data-e0-1617.csv",
+    "sha256": "9625a7652b5f98fbd3e2e4d378c851fc246693f3343e34a72428d5b6e864d3e0",
+    "url": "https://www.football-data.co.uk/mmz4281/1617/E0.csv"
+  },
+  "football-data-e0-1718": {
+    "bytes": 100734,
+    "fetched": "2026-09-11T06:59:41+00:00",
+    "licence": "Free to use with attribution (football-data.co.uk)",
+    "note": "English Premier League 2017/18: results and closing odds.",
+    "path": "data\\raw\\football-data-e0-1718.csv",
+    "sha256": "4f3389365ef3f7ac966764ed8ba67cf3b79f5aebed18dd224099c4b2c98bc67b",
+    "url": "https://www.football-data.co.uk/mmz4281/1718/E0.csv"
+  },
+  "football-data-e0-1819": {
+    "bytes": 96144,
+    "fetched": "2026-09-11T06:59:43+00:00",
+    "licence": "Free to use with attribution (football-data.co.uk)",
+    "note": "English Premier League 2018/19: results and closing odds.",
+    "path": "data\\raw\\football-data-e0-1819.csv",
+    "sha256": "7c096b3c2ecd54c6993d22eeea73450c2bde11e3457238b226b8f43c62dfc35e",
+    "url": "https://www.football-data.co.uk/mmz4281/1819/E0.csv"
+  },
+  "football-data-e0-1920": {
+    "bytes": 175475,
+    "fetched": "2026-09-11T06:59:44+00:00",
+    "licence": "Free to use with attribution (football-data.co.uk)",
+    "note": "English Premier League 2019/20: results and closing odds.",
+    "path": "data\\raw\\football-data-e0-1920.csv",
+    "sha256": "100037618b94f94057400bb02bf6bac4ef74ddaa58cde4b38370839c39caee61",
+    "url": "https://www.football-data.co.uk/mmz4281/1920/E0.csv"
+  },
+  "football-data-e0-2021": {
+    "bytes": 175815,
+    "fetched": "2026-09-11T06:59:46+00:00",
+    "licence": "Free to use with attribution (football-data.co.uk)",
+    "note": "English Premier League 2020/21: results and closing odds.",
+    "path": "data\\raw\\football-data-e0-2021.csv",
+    "sha256": "5afe63f69401457b8354eaacee24f9a3e520b3c3af6329564a9783e20d789c62",
+    "url": "https://www.football-data.co.uk/mmz4281/2021/E0.csv"
+  },
+  "football-data-e0-2122": {
+    "bytes": 175363,
+    "fetched": "2026-09-11T06:59:47+00:00",
+    "licence": "Free to use with attribution (football-data.co.uk)",
+    "note": "English Premier League 2021/22: results and closing odds.",
+    "path": "data\\raw\\football-data-e0-2122.csv",
+    "sha256": "335afcbabeb2939fa10ab39ba3e8215072d0b577cb8d0705c1e44c56e934e703",
+    "url": "https://www.football-data.co.uk/mmz4281/2122/E0.csv"
+  },
+  "football-data-e0-2223": {
+    "bytes": 176180,
+    "fetched": "2026-09-11T06:59:49+00:00",
+    "licence": "Free to use with attribution (football-data.co.uk)",
+    "note": "English Premier League 2022/23: results and closing odds.",
+    "path": "data\\raw\\football-data-e0-2223.csv",
+    "sha256": "8442792d3b614c94ea3cf381bd2736805889cc1713169035368fff19c3d02380",
+    "url": "https://www.football-data.co.uk/mmz4281/2223/E0.csv"
+  },
+  "football-data-e0-2324": {
+    "bytes": 172196,
+    "fetched": "2026-09-11T06:58:16+00:00",
+    "licence": "Free to use with attribution (football-data.co.uk)",
+    "note": "English Premier League 2023/24: every result plus closing odds from several bookmakers. The odds are the benchmark any model has to beat.",
+    "path": "data\\raw\\football-data-e0-2324.csv",
+    "sha256": "b2e057b0ed959f198b0f63d2391c01239f3608e6de5db68edab3f88e04d07ff3",
+    "url": "https://www.football-data.co.uk/mmz4281/2324/E0.csv"
+  },
+  "shiller-sp500-monthly": {
+    "bytes": 123800,
+    "fetched": "2026-09-11T07:09:23+00:00",
+    "licence": "Public (Shiller, Yale) via datasets/s-and-p-500",
+    "note": "Robert Shiller's long-run S&P 500 series, monthly since 1871: price, dividends, earnings, CPI, long rate and CAPE.",
+    "path": "data\\raw\\shiller-sp500-monthly.csv",
+    "sha256": "ed6a0faf1864d60161806b594b45a2642f6149f59b26b3d7b32c2ce38758dc6f",
+    "url": "https://raw.githubusercontent.com/datasets/s-and-p-500/main/data/data.csv"
+  },
+  "stock-daily-5tickers": {
+    "bytes": 151626,
+    "fetched": "2026-09-11T06:53:53+00:00",
+    "licence": "MIT (plotly/datasets)",
+    "note": "Daily closes for MSFT, IBM, SBUX, AAPL and GSPC (the S&P 500 index), 2,306 trading days. Used for the backtest-overfitting search.",
+    "path": "data\\raw\\stock-daily-5tickers.csv",
+    "sha256": "60bf505fec160ce05ba959382adee32ea6e53ce14fe22886db27c58fe1b0d26b",
+    "url": "https://raw.githubusercontent.com/plotly/datasets/master/stockdata.csv"
+  },
+  "uci-bank-marketing": {
+    "bytes": 1023843,
+    "fetched": "2026-09-11T07:06:59+00:00",
+    "licence": "CC BY 4.0 (UCI ML Repository)",
+    "note": "UCI Bank Marketing: 45,211 phone contacts from a Portuguese bank campaign, with the subscription outcome. 11.7% positive rate.",
+    "path": "data\\raw\\uci-bank-marketing.zip",
+    "sha256": "e0bf5f5de5b846e2f18e9d90606637267d46dfa260e0f17bb12e605db5efbeb4",
+    "url": "https://archive.ics.uci.edu/static/public/222/bank+marketing.zip"
+  },
+  "uci-online-retail-ii": {
+    "bytes": 45622418,
+    "fetched": "2026-09-11T07:09:20+00:00",
+    "licence": "CC BY 4.0 (UCI ML Repository)",
+    "note": "UCI Online Retail II: ~1M invoice lines from a UK gift wholesaler, 2009-2011. Real transaction data with returns, cancellations and a long tail of customers.",
+    "path": "data\\raw\\uci-online-retail-ii.zip",
+    "sha256": "572e36277c2390fbfde10664750731e0a86f55e33470d91919085f0408e67bfb",
+    "url": "https://archive.ics.uci.edu/static/public/502/online+retail+ii.zip"
+  }
+}

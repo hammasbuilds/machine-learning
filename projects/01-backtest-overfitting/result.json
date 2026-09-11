@@ -1,0 +1,17 @@
+{
+  "ticker": "GSPC",
+  "observations": 2306,
+  "trials": 846,
+  "best_rule": "crossover(14,180)",
+  "best_sharpe_real": 0.6204,
+  "best_sharpe_shuffled": 0.6951,
+  "buy_and_hold_sharpe": 0.2771,
+  "in_sample_sharpe": 0.6109,
+  "out_of_sample_sharpe": 0.6296,
+  "minimum_track_record_days": 1804.4,
+  "observed_sharpe": 0.62,
+  "noise_benchmark": 0.861,
+  "share_explained_by_search": 1.388,
+  "deflated_sharpe_ratio": 0.2354,
+  "verdict": "not distinguishable from search"
+}

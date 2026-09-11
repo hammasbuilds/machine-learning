@@ -1,0 +1,42 @@
+{
+  "trading_days": 604,
+  "closures_removed": 135,
+  "horizon": 7,
+  "folds": 60,
+  "scores": [
+    {
+      "model": "28-day mean",
+      "mase": 0.9231,
+      "mape": 0.534,
+      "bias": -1289.982,
+      "folds": 60,
+      "beats_seasonal_naive": true
+    },
+    {
+      "model": "Weekday profile (last 8)",
+      "mase": 1.0112,
+      "mape": 0.6004,
+      "bias": -2013.405,
+      "folds": 60,
+      "beats_seasonal_naive": false
+    },
+    {
+      "model": "Seasonal naive (last week)",
+      "mase": 1.2356,
+      "mape": 0.6239,
+      "bias": -556.361,
+      "folds": 60,
+      "beats_seasonal_naive": false
+    }
+  ],
+  "ranked_by_mase": [
+    "28-day mean",
+    "Weekday profile (last 8)",
+    "Seasonal naive (last week)"
+  ],
+  "ranked_by_mape": [
+    "28-day mean",
+    "Weekday profile (last 8)",
+    "Seasonal naive (last week)"
+  ]
+}

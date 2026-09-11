@@ -1,0 +1,24 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+      - run: uv sync --all-groups
+      - name: Lint
+        run: |
+          uv run ruff check shared tests projects
+          uv run ruff format --check shared tests projects
+      - name: Test
+        # No network here on purpose: every test runs on constructed data, so a dead
+        # dataset link can never turn into a red build for the wrong reason.
+        run: uv run pytest -q

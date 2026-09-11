@@ -1,0 +1,35 @@
+[project]
+name = "machine-learning"
+version = "0.1.0"
+description = "Ten machine-learning projects on public data, each built around the mistake that makes it wrong."
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scipy>=1.13",
+    "scikit-learn>=1.5",
+    "matplotlib>=3.9",
+    "statsmodels>=0.14",
+    "openpyxl>=3.1.5",
+]
+
+[project.optional-dependencies]
+boost = ["lightgbm>=4.5"]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["shared"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "C4", "RET", "ARG", "PTH"]
+ignore = ["E501"]

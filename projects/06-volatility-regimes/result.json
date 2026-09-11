@@ -1,0 +1,36 @@
+{
+  "days": 9269,
+  "from": "1990-01-02",
+  "to": "2026-09-09",
+  "vix": {
+    "min": 9.14,
+    "median": 17.58,
+    "max": 82.69
+  },
+  "persistence": 0.9124,
+  "transition_matrix": [
+    [
+      0.9256,
+      0.0744,
+      0.0
+    ],
+    [
+      0.0524,
+      0.9066,
+      0.0409
+    ],
+    [
+      0.0,
+      0.096,
+      0.904
+    ]
+  ],
+  "days_compared": 8769,
+  "disagreement_rate": 0.1053,
+  "disagreement_rate_near_turning_points": 0.1272,
+  "concentration": 1.21,
+  "stress_episodes_any_length": 170,
+  "stress_episodes_20_days_plus": 24,
+  "median_days_late_all": 0.0,
+  "median_days_late_major": 0.0
+}

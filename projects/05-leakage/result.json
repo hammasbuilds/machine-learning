@@ -1,0 +1,59 @@
+{
+  "calls": 45211,
+  "subscriptions": 5289,
+  "subscription_rate": 0.117,
+  "flagged_columns": [
+    "duration"
+  ],
+  "auc_gap_from_one_column": 0.1063,
+  "overall_positive_rate": 0.117,
+  "holdout_positive_rate": 0.2543,
+  "split_comparison": [
+    {
+      "split": "random split",
+      "features": "with duration",
+      "roc_auc": 0.9344,
+      "test_positive_rate": 0.1177
+    },
+    {
+      "split": "random split",
+      "features": "without duration",
+      "roc_auc": 0.8104,
+      "test_positive_rate": 0.1177
+    },
+    {
+      "split": "time-ordered split",
+      "features": "with duration",
+      "roc_auc": 0.7325,
+      "test_positive_rate": 0.2543
+    },
+    {
+      "split": "time-ordered split",
+      "features": "without duration",
+      "roc_auc": 0.6262,
+      "test_positive_rate": 0.2543
+    }
+  ],
+  "models": [
+    {
+      "model": "With `duration` (leaky)",
+      "roc_auc": 0.7325,
+      "lift@10%": 2.2013,
+      "campaign_calls": 1356,
+      "campaign_subscriptions": 759,
+      "campaign_conversion": 0.5597,
+      "campaign_profit": 58008.0,
+      "campaign_lift": 2.201
+    },
+    {
+      "model": "Without `duration` (honest)",
+      "roc_auc": 0.6262,
+      "lift@10%": 1.8475,
+      "campaign_calls": 1356,
+      "campaign_subscriptions": 637,
+      "campaign_conversion": 0.4698,
+      "campaign_profit": 48248.0,
+      "campaign_lift": 1.847
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "from": "1881-01-01",
+  "to": "2013-09-01",
+  "monthly_rows": 1593,
+  "independent_windows": 13.3,
+  "r_squared": 0.1062,
+  "regressions": [
+    {
+      "method": "Naive OLS (every month)",
+      "slope": -0.0026,
+      "standard_error": 0.00019,
+      "t": -13.75,
+      "p": 0.0,
+      "rows_used": 1593,
+      "independent_observations": 1593.0,
+      "significant_at_5pct": true
+    },
+    {
+      "method": "Newey-West (lags = horizon)",
+      "slope": -0.0026,
+      "standard_error": 0.00088,
+      "t": -2.96,
+      "p": 0.0127,
+      "rows_used": 1593,
+      "independent_observations": 13.3,
+      "significant_at_5pct": true
+    },
+    {
+      "method": "Disjoint windows only (n=14)",
+      "slope": -0.00268,
+      "standard_error": 0.00234,
+      "t": -1.15,
+      "p": 0.2743,
+      "rows_used": 14,
+      "independent_observations": 14.0,
+      "significant_at_5pct": false
+    }
+  ],
+  "t_inflation_factor": 12.0,
+  "sqrt_horizon": 10.95,
+  "disjoint_offsets_significant": 0.1083,
+  "disjoint_t_range": [
+    0.03,
+    2.96
+  ]
+}

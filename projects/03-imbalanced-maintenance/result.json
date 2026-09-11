@@ -1,0 +1,56 @@
+{
+  "cycles": 10000,
+  "failures": 339,
+  "failure_rate": 0.0339,
+  "label_inconsistencies": {
+    "mode_flagged_not_labelled": 18,
+    "labelled_no_mode": 9
+  },
+  "cost_miss": 5000.0,
+  "cost_alarm": 100.0,
+  "models": [
+    {
+      "model": "Never predict failure",
+      "accuracy@0.5": 0.9797,
+      "recall@0.5": 0.0,
+      "roc_auc": 0.5,
+      "avg_precision": 0.0203,
+      "cost@0.5": 305000.0
+    },
+    {
+      "model": "Logistic regression",
+      "accuracy@0.5": 0.9473,
+      "recall@0.5": 0.6393,
+      "roc_auc": 0.9024,
+      "avg_precision": 0.4053,
+      "cost@0.5": 123600.0
+    },
+    {
+      "model": "Gradient boosting",
+      "accuracy@0.5": 0.9903,
+      "recall@0.5": 0.6066,
+      "roc_auc": 0.9295,
+      "avg_precision": 0.7565,
+      "cost@0.5": 120500.0
+    }
+  ],
+  "default_threshold": {
+    "threshold": 0.5,
+    "cost": 120500.0,
+    "recall": 0.6066,
+    "precision": 0.881,
+    "accuracy": 0.9903,
+    "missed_failures": 24,
+    "false_alarms": 5
+  },
+  "chosen_threshold": {
+    "threshold": 0.0075,
+    "cost": 83200.0,
+    "recall": 0.7377,
+    "precision": 0.5844,
+    "accuracy": 0.984,
+    "missed_failures": 16,
+    "false_alarms": 32
+  },
+  "cost_saved": 37300.0
+}

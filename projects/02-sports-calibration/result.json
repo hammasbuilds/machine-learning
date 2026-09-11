@@ -1,0 +1,52 @@
+{
+  "matches": 3420,
+  "seasons": [
+    "2015/16",
+    "2016/17",
+    "2017/18",
+    "2018/19",
+    "2019/20",
+    "2020/21",
+    "2021/22",
+    "2022/23",
+    "2023/24"
+  ],
+  "base_rates": {
+    "home": 0.4491,
+    "draw": 0.2319,
+    "away": 0.319
+  },
+  "mean_overround": 1.024,
+  "brier_without_removing_overround": 0.5609,
+  "betting_roi": {
+    "Bet where Elo sees value": -0.0338,
+    "Always back the favourite": -0.0153,
+    "Pick at random": -0.0566
+  },
+  "scores": [
+    {
+      "forecaster": "Always home",
+      "accuracy": 0.4491,
+      "brier": 1.1018,
+      "log_loss": 19.0266
+    },
+    {
+      "forecaster": "Base rate",
+      "accuracy": 0.4491,
+      "brier": 0.6428,
+      "log_loss": 1.0629
+    },
+    {
+      "forecaster": "Elo (walk-forward)",
+      "accuracy": 0.5404,
+      "brier": 0.5811,
+      "log_loss": 0.9829
+    },
+    {
+      "forecaster": "Closing odds",
+      "accuracy": 0.5535,
+      "brier": 0.5608,
+      "log_loss": 0.9487
+    }
+  ]
+}
