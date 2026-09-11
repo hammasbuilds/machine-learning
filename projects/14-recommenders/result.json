@@ -1,0 +1,50 @@
+{
+  "purchases": 766241,
+  "users": 5016,
+  "items": 3641,
+  "density": 0.033339,
+  "test_users": 2239,
+  "k": 10,
+  "scores": [
+    {
+      "model": "Random",
+      "precision@k": 0.0075,
+      "recall@k": 0.0018,
+      "ndcg@k": 0.0077,
+      "catalogue_coverage": 0.9992,
+      "novelty": 12.946,
+      "users": 2239
+    },
+    {
+      "model": "Popularity",
+      "precision@k": 0.032,
+      "recall@k": 0.0098,
+      "ndcg@k": 0.035,
+      "catalogue_coverage": 0.0242,
+      "novelty": 8.225,
+      "users": 2239
+    },
+    {
+      "model": "Item-item CF (cosine)",
+      "precision@k": 0.0557,
+      "recall@k": 0.0189,
+      "ndcg@k": 0.0601,
+      "catalogue_coverage": 0.2101,
+      "novelty": 8.899,
+      "users": 2239
+    },
+    {
+      "model": "ALS matrix factorisation",
+      "precision@k": 0.054,
+      "recall@k": 0.0196,
+      "ndcg@k": 0.0577,
+      "catalogue_coverage": 0.4084,
+      "novelty": 10.106,
+      "users": 2239
+    }
+  ],
+  "best_beats_popularity": true,
+  "split_inflation": 1.624,
+  "random_split_ndcg": 0.0976,
+  "temporal_split_ndcg": 0.0601
+}

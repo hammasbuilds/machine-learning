@@ -1,0 +1,81 @@
+{
+  "cycles": 10000,
+  "failures": 339,
+  "base_rate": 0.0339,
+  "budget": 200,
+  "agreement": [
+    {
+      "a": "Isolation Forest",
+      "b": "Local Outlier Factor",
+      "overlap": 0.365,
+      "rank_correlation": 0.5692
+    },
+    {
+      "a": "Isolation Forest",
+      "b": "Mahalanobis distance",
+      "overlap": 0.635,
+      "rank_correlation": 0.8343
+    },
+    {
+      "a": "Local Outlier Factor",
+      "b": "Mahalanobis distance",
+      "overlap": 0.355,
+      "rank_correlation": 0.6669
+    }
+  ],
+  "detectors": [
+    {
+      "detector": "Isolation Forest",
+      "precision": 0.2,
+      "recall": 0.118,
+      "lift": 5.8997,
+      "found": 40
+    },
+    {
+      "detector": "Local Outlier Factor",
+      "precision": 0.365,
+      "recall": 0.2153,
+      "lift": 10.767,
+      "found": 73
+    },
+    {
+      "detector": "Mahalanobis distance",
+      "precision": 0.42,
+      "recall": 0.2478,
+      "lift": 12.3894,
+      "found": 84
+    }
+  ],
+  "by_failure_mode": [
+    {
+      "mode": "TWF",
+      "total": 46,
+      "caught": 3,
+      "share": 0.0652
+    },
+    {
+      "mode": "HDF",
+      "total": 115,
+      "caught": 5,
+      "share": 0.0435
+    },
+    {
+      "mode": "PWF",
+      "total": 95,
+      "caught": 77,
+      "share": 0.8105
+    },
+    {
+      "mode": "OSF",
+      "total": 98,
+      "caught": 15,
+      "share": 0.1531
+    },
+    {
+      "mode": "RNF",
+      "total": 19,
+      "caught": 0,
+      "share": 0.0
+    }
+  ]
+}

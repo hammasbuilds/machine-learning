@@ -1,0 +1,46 @@
+{
+  "shape": [
+    700,
+    120
+  ],
+  "sparsity": 0.3419,
+  "pc1_variance": {
+    "unscaled": 0.2503,
+    "scaled": 0.232
+  },
+  "components_for_90pct": 27,
+  "components_for_95pct": 38,
+  "total_features": 120,
+  "linear_methods": [
+    {
+      "method": "PCA",
+      "variance": 0.60822,
+      "mse": 0.39178
+    },
+    {
+      "method": "Truncated SVD",
+      "variance": 0.87642,
+      "mse": 3951.77423
+    },
+    {
+      "method": "NMF",
+      "variance": 1.0,
+      "mse": 4121.4611
+    }
+  ],
+  "geometry": [
+    {
+      "method": "PCA (2d)",
+      "trustworthiness": 0.5862,
+      "overlap": 0.0568,
+      "distance_corr": 0.8471
+    },
+    {
+      "method": "t-SNE",
+      "trustworthiness": 0.6478,
+      "overlap": 0.1218,
+      "distance_corr": 0.2706
+    }
+  ],
+  "distance_correlation_gap": 0.5765
+}

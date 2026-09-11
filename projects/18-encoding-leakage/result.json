@@ -1,0 +1,97 @@
+{
+  "rows": 1055823,
+  "return_rate": 0.01749,
+  "distinct_stock_codes": 4747,
+  "baseline": {
+    "train_auc": 0.5943,
+    "test_auc": 0.5673
+  },
+  "stock_code": [
+    {
+      "encoding": "Naive (fit on all data)",
+      "train_auc": 0.7721,
+      "test_auc": 0.7314,
+      "gap": 0.0407,
+      "lift": 0.164
+    },
+    {
+      "encoding": "Train-only",
+      "train_auc": 0.7781,
+      "test_auc": 0.6461,
+      "gap": 0.132,
+      "lift": 0.0787
+    },
+    {
+      "encoding": "Train-only + smoothing",
+      "train_auc": 0.7731,
+      "test_auc": 0.653,
+      "gap": 0.1201,
+      "lift": 0.0857
+    },
+    {
+      "encoding": "Out-of-fold (5 folds)",
+      "train_auc": 0.7255,
+      "test_auc": 0.6526,
+      "gap": 0.0729,
+      "lift": 0.0853
+    }
+  ],
+  "noise_control": [
+    {
+      "encoding": "Naive (fit on all data)",
+      "train_auc": 0.6675,
+      "test_auc": 0.6515,
+      "gap": 0.016
+    },
+    {
+      "encoding": "Train-only",
+      "train_auc": 0.6827,
+      "test_auc": 0.537,
+      "gap": 0.1457
+    },
+    {
+      "encoding": "Train-only + smoothing",
+      "train_auc": 0.6827,
+      "test_auc": 0.537,
+      "gap": 0.1457
+    },
+    {
+      "encoding": "Out-of-fold (5 folds)",
+      "train_auc": 0.5944,
+      "test_auc": 0.5674,
+      "gap": 0.0269
+    }
+  ],
+  "leak_by_rarity": [
+    {
+      "appearances": "1",
+      "naive": 0.9991,
+      "out_of_fold": -0.0,
+      "rows": 114
+    },
+    {
+      "appearances": "2-4",
+      "naive": 0.7145,
+      "out_of_fold": 0.1916,
+      "rows": 661
+    },
+    {
+      "appearances": "5-19",
+      "naive": 0.3739,
+      "out_of_fold": 0.0914,
+      "rows": 8245
+    },
+    {
+      "appearances": "20-99",
+      "naive": 0.2239,
+      "out_of_fold": 0.1393,
+      "rows": 77167
+    },
+    {
+      "appearances": "100+",
+      "naive": 0.2044,
+      "out_of_fold": 0.1925,
+      "rows": 705680
+    }
+  ]
+}

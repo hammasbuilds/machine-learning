@@ -1,0 +1,90 @@
+{
+  "policies": 678013,
+  "exposure_years": 358360.1,
+  "claim_rate_per_year": 0.10061,
+  "policies_with_claim": 0.05024,
+  "frequency": {
+    "with_offset": {
+      "deviance": 0.315438,
+      "gini": 0.2628
+    },
+    "without_offset": {
+      "deviance": 0.311377,
+      "gini": 0.3128
+    },
+    "short_vs_long_charge_ratio": {
+      "with_offset": 0.0948,
+      "without_offset": 1.0985
+    },
+    "credibility_bands": [
+      {
+        "band": "(-0.001, 0.05]",
+        "exposure_years": 338.5,
+        "observed_rate": 1.0754,
+        "predicted_rate": 0.1285,
+        "share_claiming": 0.0286,
+        "credible": false
+      },
+      {
+        "band": "(0.05, 0.15]",
+        "exposure_years": 2481.4,
+        "observed_rate": 0.2982,
+        "predicted_rate": 0.1204,
+        "share_claiming": 0.0263,
+        "credible": true
+      },
+      {
+        "band": "(0.15, 0.35]",
+        "exposure_years": 6998.6,
+        "observed_rate": 0.1652,
+        "predicted_rate": 0.1167,
+        "share_claiming": 0.0392,
+        "credible": true
+      },
+      {
+        "band": "(0.35, 0.6]",
+        "exposure_years": 14379.6,
+        "observed_rate": 0.1161,
+        "predicted_rate": 0.1169,
+        "share_claiming": 0.0518,
+        "credible": true
+      },
+      {
+        "band": "(0.6, 0.85]",
+        "exposure_years": 14816.3,
+        "observed_rate": 0.0962,
+        "predicted_rate": 0.1123,
+        "share_claiming": 0.0647,
+        "credible": true
+      },
+      {
+        "band": "(0.85, 1.0]",
+        "exposure_years": 50643.8,
+        "observed_rate": 0.0701,
+        "predicted_rate": 0.09,
+        "share_claiming": 0.066,
+        "credible": true
+      }
+    ]
+  },
+  "severity": {
+    "claims": 18766,
+    "cap_eur": 35069.41,
+    "capped": 94,
+    "mean_eur": 1686.68
+  },
+  "pure_premium": [
+    {
+      "model": "frequency x severity",
+      "gini": 0.3406,
+      "loss_ratio": 0.9508,
+      "mean_premium": 170.8083
+    },
+    {
+      "model": "Tweedie, one model",
+      "gini": 0.3351,
+      "loss_ratio": 0.9711,
+      "mean_premium": 167.2485
+    }
+  ]
+}

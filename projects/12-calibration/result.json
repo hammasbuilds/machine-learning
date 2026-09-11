@@ -1,0 +1,83 @@
+{
+  "calls": 45211,
+  "positive_rate": 0.117,
+  "split": {
+    "train": 27126,
+    "calibration": 9042,
+    "test": 9043
+  },
+  "raw_models": [
+    {
+      "model": "Gradient boosting",
+      "auc": 0.8067,
+      "brier": 0.08054,
+      "ece": 0.01473
+    },
+    {
+      "model": "Random forest",
+      "auc": 0.8061,
+      "brier": 0.0814,
+      "ece": 0.01457
+    },
+    {
+      "model": "Naive Bayes",
+      "auc": 0.713,
+      "brier": 0.14817,
+      "ece": 0.14287
+    },
+    {
+      "model": "Logistic regression",
+      "auc": 0.7253,
+      "brier": 0.09381,
+      "ece": 0.01388
+    }
+  ],
+  "worst_calibrated": "Naive Bayes",
+  "repairs": [
+    {
+      "method": "Uncalibrated",
+      "auc": 0.713,
+      "brier": 0.14817,
+      "ece": 0.14287,
+      "max_error": 0.61602,
+      "calibration_samples": 9042
+    },
+    {
+      "method": "Platt (sigmoid)",
+      "auc": 0.7129,
+      "brier": 0.09831,
+      "ece": 0.02719,
+      "max_error": 0.06276,
+      "calibration_samples": 9042
+    },
+    {
+      "method": "Isotonic",
+      "auc": 0.7122,
+      "brier": 0.09623,
+      "ece": 0.01179,
+      "max_error": 0.09507,
+      "calibration_samples": 9042
+    }
+  ],
+  "money": {
+    "Uncalibrated": {
+      "predicted_loss": 7600164.41,
+      "actual_loss": 3772800.0,
+      "error": 3827364.41,
+      "error_pct": 1.0145
+    },
+    "Platt (sigmoid)": {
+      "predicted_loss": 4001053.66,
+      "actual_loss": 3772800.0,
+      "error": 228253.66,
+      "error_pct": 0.0605
+    },
+    "Isotonic": {
+      "predicted_loss": 4001764.5,
+      "actual_loss": 3772800.0,
+      "error": 228964.5,
+      "error_pct": 0.0607
+    }
+  },
+  "isotonic_beats_platt_from": 250
+}

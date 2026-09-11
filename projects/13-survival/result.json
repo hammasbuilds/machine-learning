@@ -1,0 +1,57 @@
+{
+  "customers": 5876,
+  "events": 4445,
+  "censored": 1431,
+  "censoring_rate": 0.2435,
+  "naive_classifier_return_rate": 0.7565,
+  "kaplan_meier_returned_by": {
+    "90d": 0.5467,
+    "180d": 0.6809,
+    "365d": 0.7792
+  },
+  "median_days_to_repeat": 70.1,
+  "log_rank_first_order_value": {
+    "observed_a": 2389.0,
+    "expected_a": 1994.1,
+    "chi2": 143.8922,
+    "p_value": 0.0
+  },
+  "leak_check": {
+    "follow_up_equals_duration_when_censored": 0.441,
+    "c_index_with_leak": 0.5359,
+    "c_index_honest": 0.5358
+  },
+  "cox": {
+    "c_index": 0.5358,
+    "log_likelihood": -35625.14,
+    "hazard_ratios": [
+      {
+        "covariate": "log_first_items",
+        "hazard_ratio": 1.0996,
+        "ci": [
+          1.06,
+          1.1408
+        ],
+        "p": 4.02e-07
+      },
+      {
+        "covariate": "log_first_value",
+        "hazard_ratio": 1.0312,
+        "ci": [
+          0.988,
+          1.0762
+        ],
+        "p": 0.1592
+      },
+      {
+        "covariate": "uk",
+        "hazard_ratio": 0.987,
+        "ci": [
+          0.9581,
+          1.0167
+        ],
+        "p": 0.3861
+      }
+    ]
+  }
+}

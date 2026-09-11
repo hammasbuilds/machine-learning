@@ -1,0 +1,107 @@
+{
+  "months": 1833,
+  "span": [
+    "1871-01-01",
+    "2023-09-01"
+  ],
+  "stationarity": [
+    {
+      "series": "Real price (level)",
+      "adf_p": 1.0,
+      "kpss_p": 0.01,
+      "agree": true,
+      "verdict": "non-stationary"
+    },
+    {
+      "series": "Log real price",
+      "adf_p": 0.95769,
+      "kpss_p": 0.01,
+      "agree": true,
+      "verdict": "non-stationary"
+    },
+    {
+      "series": "Log return (1st diff)",
+      "adf_p": 0.0,
+      "kpss_p": 0.1,
+      "agree": true,
+      "verdict": "stationary"
+    },
+    {
+      "series": "CPI (level)",
+      "adf_p": 1.0,
+      "kpss_p": 0.01,
+      "agree": true,
+      "verdict": "non-stationary"
+    },
+    {
+      "series": "CPI inflation (diff)",
+      "adf_p": 0.0,
+      "kpss_p": 0.01,
+      "agree": false,
+      "verdict": "undecided"
+    }
+  ],
+  "spurious": {
+    "levels_significant": 0.9367,
+    "differences_significant": 0.04,
+    "levels_median_r2": 0.1618
+  },
+  "levels_backtest": [
+    {
+      "model": "Drift",
+      "mase": 3.5871,
+      "bias": -0.0252
+    },
+    {
+      "model": "Random walk (last value)",
+      "mase": 3.7119,
+      "bias": -0.03472
+    },
+    {
+      "model": "ARIMA(2, 1, 2)",
+      "mase": 3.7589,
+      "bias": -0.03697
+    },
+    {
+      "model": "ARIMA(1, 1, 1)",
+      "mase": 3.7762,
+      "bias": -0.03677
+    },
+    {
+      "model": "Holt (damped trend)",
+      "mase": 3.8938,
+      "bias": -0.03935
+    },
+    {
+      "model": "Trailing mean (24)",
+      "mase": 6.1759,
+      "bias": -0.00644
+    }
+  ],
+  "returns_backtest": [
+    {
+      "model": "ARIMA(1, 1, 1)",
+      "mase": 0.8599
+    },
+    {
+      "model": "ARIMA(2, 1, 2)",
+      "mase": 0.8616
+    },
+    {
+      "model": "Holt (damped trend)",
+      "mase": 0.8813
+    },
+    {
+      "model": "Trailing mean (24)",
+      "mase": 0.9012
+    },
+    {
+      "model": "Random walk (last value)",
+      "mase": 1.2235
+    },
+    {
+      "model": "Drift",
+      "mase": 1.2298
+    }
+  ]
+}

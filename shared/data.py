@@ -165,6 +165,23 @@ BANK_MARKETING = Source(
     licence="CC BY 4.0 (UCI ML Repository)",
 )
 
+FRENCH_MOTOR_FREQ = Source(
+    name="fremtpl2-frequency",
+    url="https://api.openml.org/data/v1/download/20649148/freMTPL2freq.arff",
+    note="French motor third-party liability: 678,013 policies with exposure in years, "
+    "claim counts, and driver/vehicle/region features. The standard actuarial pricing "
+    "dataset - real policies, real claims, real exposure.",
+    licence="Public via OpenML (originally CASdatasets, GPL-2)",
+)
+
+FRENCH_MOTOR_SEV = Source(
+    name="fremtpl2-severity",
+    url="https://api.openml.org/data/v1/download/20649149/freMTPL2sev.arff",
+    note="Claim amounts for the policies above, joined on IDpol. Frequency and severity "
+    "are separate files because they are separate models.",
+    licence="Public via OpenML (originally CASdatasets, GPL-2)",
+)
+
 CATALOGUE = {
     s.name: s
     for s in (
@@ -175,6 +192,8 @@ CATALOGUE = {
         AI4I_MAINTENANCE,
         ONLINE_RETAIL,
         BANK_MARKETING,
+        FRENCH_MOTOR_FREQ,
+        FRENCH_MOTOR_SEV,
     )
 }
 
@@ -258,3 +277,53 @@ def online_retail() -> pd.DataFrame:
     frame["is_return"] = frame["Invoice"].str.startswith("C")
     frame["revenue"] = frame["Quantity"] * frame["Price"]
     return frame.reset_index(drop=True)
+
+
+def read_arff(path: Path) -> pd.DataFrame:
+    """Minimal ARFF reader.
+
+    `scipy.io.arff` exists and returns bytes for every nominal column, which then has to be
+    decoded field by field. These files are simple - a header of @attribute lines and then
+    CSV - so parsing them directly is shorter than cleaning up after scipy.
+    """
+    names: list[str] = []
+    data_start = 0
+    lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
+
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if stripped.lower().startswith("@attribute"):
+            names.append(stripped.split()[1].strip("'" + chr(34)))
+        elif stripped.lower().startswith("@data"):
+            data_start = i + 1
+            break
+
+    from io import StringIO
+
+    body = chr(10).join(lines[data_start:])
+    frame = pd.read_csv(
+        StringIO(body), header=None, names=names, quotechar="'", skipinitialspace=True
+    )
+    for column in frame.columns:
+        if frame[column].dtype == object:
+            frame[column] = frame[column].astype(str).str.strip().str.strip("'")
+    return frame
+
+
+def french_motor() -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Policies with exposure and claim counts, plus individual claim amounts.
+
+    Returned as two frames rather than one joined table, deliberately. Frequency and
+    severity are **different models with different targets and different distributions**,
+    and joining them up front invites the mistake project 11 is about: modelling total
+    loss directly and losing the ability to say which half moved.
+    """
+    frequency = read_arff(fetch(FRENCH_MOTOR_FREQ, "fremtpl2-frequency.arff"))
+    severity = read_arff(fetch(FRENCH_MOTOR_SEV, "fremtpl2-severity.arff"))
+
+    # Exposure above one policy-year is a data error: a policy cannot be in force for more
+    # than a year within an annual observation window. Capped, not dropped, and reported.
+    frequency["Exposure"] = frequency["Exposure"].clip(upper=1.0)
+    # A handful of policies record absurd claim counts; the actuarial literature caps at 4.
+    frequency["ClaimNb"] = frequency["ClaimNb"].clip(upper=4)
+    return frequency, severity

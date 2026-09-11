@@ -1,0 +1,151 @@
+{
+  "rows": 10000,
+  "failure_rate": 0.0339,
+  "features": [
+    "air_temp",
+    "process_temp",
+    "temp_difference",
+    "temp_ratio",
+    "speed",
+    "torque",
+    "power",
+    "log_power",
+    "tool_wear",
+    "wear_x_torque",
+    "wear_squared",
+    "torque_per_rpm",
+    "is_low_quality",
+    "is_high_quality"
+  ],
+  "penalties": [
+    {
+      "model": "Ridge (L2)",
+      "train_auc": 0.9347,
+      "test_auc": 0.9216,
+      "kept": 14
+    },
+    {
+      "model": "Lasso (L1)",
+      "train_auc": 0.9342,
+      "test_auc": 0.9229,
+      "kept": 7
+    },
+    {
+      "model": "Elastic net (0.5)",
+      "train_auc": 0.9352,
+      "test_auc": 0.9238,
+      "kept": 10
+    },
+    {
+      "model": "No penalty",
+      "train_auc": 0.9482,
+      "test_auc": 0.9239,
+      "kept": 14
+    }
+  ],
+  "test_auc_spread": 0.00234,
+  "stability": [
+    {
+      "column": "speed",
+      "selected_share": 1.0,
+      "sign_consistency": 1.0
+    },
+    {
+      "column": "temp_difference",
+      "selected_share": 1.0,
+      "sign_consistency": 1.0
+    },
+    {
+      "column": "wear_squared",
+      "selected_share": 1.0,
+      "sign_consistency": 1.0
+    },
+    {
+      "column": "torque_per_rpm",
+      "selected_share": 1.0,
+      "sign_consistency": 1.0
+    },
+    {
+      "column": "log_power",
+      "selected_share": 1.0,
+      "sign_consistency": 1.0
+    },
+    {
+      "column": "tool_wear",
+      "selected_share": 0.875,
+      "sign_consistency": 1.0
+    },
+    {
+      "column": "is_low_quality",
+      "selected_share": 0.865,
+      "sign_consistency": 0.977
+    },
+    {
+      "column": "is_high_quality",
+      "selected_share": 0.455,
+      "sign_consistency": 0.714
+    },
+    {
+      "column": "process_temp",
+      "selected_share": 0.38,
+      "sign_consistency": 1.0
+    },
+    {
+      "column": "wear_x_torque",
+      "selected_share": 0.12,
+      "sign_consistency": 0.958
+    },
+    {
+      "column": "temp_ratio",
+      "selected_share": 0.075,
+      "sign_consistency": 1.0
+    },
+    {
+      "column": "air_temp",
+      "selected_share": 0.055,
+      "sign_consistency": 0.909
+    },
+    {
+      "column": "torque",
+      "selected_share": 0.01,
+      "sign_consistency": 1.0
+    },
+    {
+      "column": "power",
+      "selected_share": 0.005,
+      "sign_consistency": 1.0
+    }
+  ],
+  "jaccard": {
+    "mean": 0.7633,
+    "min": 0.4167,
+    "max": 1.0
+  },
+  "scaling": {
+    "scaled_kept": [
+      "is_low_quality",
+      "log_power",
+      "speed",
+      "temp_difference",
+      "tool_wear",
+      "torque_per_rpm",
+      "wear_squared"
+    ],
+    "unscaled_kept": [
+      "air_temp",
+      "is_low_quality",
+      "log_power",
+      "power",
+      "process_temp",
+      "speed",
+      "temp_difference",
+      "temp_ratio",
+      "tool_wear",
+      "torque",
+      "wear_squared",
+      "wear_x_torque"
+    ],
+    "scaled_test_auc": 0.9229,
+    "unscaled_test_auc": 0.7984
+  }
+}

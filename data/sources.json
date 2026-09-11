@@ -98,6 +98,24 @@
     "sha256": "b2e057b0ed959f198b0f63d2391c01239f3608e6de5db68edab3f88e04d07ff3",
     "url": "https://www.football-data.co.uk/mmz4281/2324/E0.csv"
   },
+  "fremtpl2-frequency": {
+    "bytes": 36288567,
+    "fetched": "2026-09-11T10:18:01+00:00",
+    "licence": "Public via OpenML (originally CASdatasets, GPL-2)",
+    "note": "French motor third-party liability: 678,013 policies with exposure in years, claim counts, and driver/vehicle/region features. The standard actuarial pricing dataset - real policies, real claims, real exposure.",
+    "path": "data\\raw\\fremtpl2-frequency.arff",
+    "sha256": "a45363e056e2ea56408b38eeb9d4d04d7f6c6982eb7a14ed5e807c7c71807cdd",
+    "url": "https://api.openml.org/data/v1/download/20649148/freMTPL2freq.arff"
+  },
+  "fremtpl2-severity": {
+    "bytes": 376555,
+    "fetched": "2026-09-11T10:18:05+00:00",
+    "licence": "Public via OpenML (originally CASdatasets, GPL-2)",
+    "note": "Claim amounts for the policies above, joined on IDpol. Frequency and severity are separate files because they are separate models.",
+    "path": "data\\raw\\fremtpl2-severity.arff",
+    "sha256": "047632016b87e132247124f449a95d6d0e9f8ba05f2fe0947ef76ab8aaa10e0a",
+    "url": "https://api.openml.org/data/v1/download/20649149/freMTPL2sev.arff"
+  },
   "shiller-sp500-monthly": {
     "bytes": 123800,
     "fetched": "2026-09-11T07:09:23+00:00",

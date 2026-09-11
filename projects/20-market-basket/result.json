@@ -1,0 +1,157 @@
+{
+  "baskets_early": 27840,
+  "baskets_late": 8473,
+  "distinct_products": 4934,
+  "rules": 140810,
+  "share_lift_above_1": 0.79,
+  "null": {
+    "rules found": 151847.1667,
+    "median lift": 1.3834,
+    "99th pct lift": 2.1459,
+    "max lift": 3.1251,
+    "share lift > 2": 0.0243
+  },
+  "real": {
+    "rules found": 140810.0,
+    "median lift": 1.3587,
+    "99th pct lift": 5.7913,
+    "max lift": 37.9617,
+    "share lift > 2": 0.1829
+  },
+  "chance_lift_threshold": 3.13,
+  "rules_above_threshold": 6094,
+  "holdout": {
+    "by_lift_held": 0.8,
+    "by_leverage_held": 0.96,
+    "by_lift_unbounded_held": 0.32
+  },
+  "unbounded": {
+    "rules": 1260380,
+    "max_lift": 310.9,
+    "median_support_of_top6": 43
+  },
+  "top_by_confidence": [
+    {
+      "rule": "POPPY'S PLAYHOUSE BEDROOM -> POPPY'S PLAYHOUSE KITCHEN",
+      "confidence": 0.7332,
+      "lift": 37.18,
+      "consequent_support": 0.0197
+    },
+    {
+      "rule": "PINK REGENCY TEACUP AND SAUCER -> GREEN REGENCY TEACUP AND SAUCER",
+      "confidence": 0.7226,
+      "lift": 21.11,
+      "consequent_support": 0.0342
+    },
+    {
+      "rule": "PAINTED METAL PEARS ASSORTED -> ASSORTED COLOUR BIRD ORNAMENT",
+      "confidence": 0.7037,
+      "lift": 9.24,
+      "consequent_support": 0.0761
+    },
+    {
+      "rule": "POPPY'S PLAYHOUSE KITCHEN -> POPPY'S PLAYHOUSE BEDROOM",
+      "confidence": 0.6958,
+      "lift": 37.18,
+      "consequent_support": 0.0187
+    },
+    {
+      "rule": "PINK REGENCY TEACUP AND SAUCER -> ROSES REGENCY TEACUP AND SAUCER",
+      "confidence": 0.6869,
+      "lift": 19.32,
+      "consequent_support": 0.0356
+    },
+    {
+      "rule": "KEY FOB , GARAGE DESIGN -> KEY FOB , SHED",
+      "confidence": 0.6842,
+      "lift": 28.6,
+      "consequent_support": 0.0239
+    },
+    {
+      "rule": "SET/6 RED SPOTTY PAPER CUPS -> SET/6 RED SPOTTY PAPER PLATES",
+      "confidence": 0.6742,
+      "lift": 23.11,
+      "consequent_support": 0.0292
+    },
+    {
+      "rule": "RED HANGING HEART T-LIGHT HOLDER -> WHITE HANGING HEART T-LIGHT HOLDER",
+      "confidence": 0.6728,
+      "lift": 4.11,
+      "consequent_support": 0.1637
+    }
+  ],
+  "top_by_leverage": [
+    {
+      "rule": "WHITE HANGING HEART T-LIGHT HOLDER -> RED HANGING HEART T-LIGHT HOLDER",
+      "lift": 4.11,
+      "baskets": 954,
+      "excess_baskets": 721.8
+    },
+    {
+      "rule": "RED HANGING HEART T-LIGHT HOLDER -> WHITE HANGING HEART T-LIGHT HOLDER",
+      "lift": 4.11,
+      "baskets": 954,
+      "excess_baskets": 721.8
+    },
+    {
+      "rule": "STRAWBERRY CERAMIC TRINKET BOX -> SWEETHEART CERAMIC TRINKET BOX",
+      "lift": 8.41,
+      "baskets": 809,
+      "excess_baskets": 712.8
+    },
+    {
+      "rule": "SWEETHEART CERAMIC TRINKET BOX -> STRAWBERRY CERAMIC TRINKET BOX",
+      "lift": 8.41,
+      "baskets": 809,
+      "excess_baskets": 712.8
+    },
+    {
+      "rule": "WOODEN FRAME ANTIQUE WHITE -> WOODEN PICTURE FRAME WHITE FINISH",
+      "lift": 8.85,
+      "baskets": 787,
+      "excess_baskets": 698.1
+    },
+    {
+      "rule": "WOODEN PICTURE FRAME WHITE FINISH -> WOODEN FRAME ANTIQUE WHITE",
+      "lift": 8.85,
+      "baskets": 787,
+      "excess_baskets": 698.1
+    },
+    {
+      "rule": "HEART OF WICKER LARGE -> HEART OF WICKER SMALL",
+      "lift": 8.16,
+      "baskets": 751,
+      "excess_baskets": 658.9
+    },
+    {
+      "rule": "HEART OF WICKER SMALL -> HEART OF WICKER LARGE",
+      "lift": 8.16,
+      "baskets": 751,
+      "excess_baskets": 658.9
+    },
+    {
+      "rule": "LOVE BUILDING BLOCK WORD -> HOME BUILDING BLOCK WORD",
+      "lift": 7.3,
+      "baskets": 693,
+      "excess_baskets": 598.1
+    },
+    {
+      "rule": "HOME BUILDING BLOCK WORD -> LOVE BUILDING BLOCK WORD",
+      "lift": 7.3,
+      "baskets": 693,
+      "excess_baskets": 598.1
+    },
+    {
+      "rule": "GREEN REGENCY TEACUP AND SAUCER -> ROSES REGENCY TEACUP AND SAUCER",
+      "lift": 18.15,
+      "baskets": 615,
+      "excess_baskets": 581.1
+    },
+    {
+      "rule": "ROSES REGENCY TEACUP AND SAUCER -> GREEN REGENCY TEACUP AND SAUCER",
+      "lift": 18.15,
+      "baskets": 615,
+      "excess_baskets": 581.1
+    }
+  ]
+}
