@@ -1,4 +1,4 @@
-# 06 · Volatility regimes — the project where I was wrong twice
+# 06 · Volatility regimes — the project where I was wrong twice (NumPy, pandas, Matplotlib)
 
 **9,269 trading days of CBOE VIX, 1990 to 2026.**
 

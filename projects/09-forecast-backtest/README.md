@@ -1,4 +1,4 @@
-# 09 · Forecast backtesting — the baseline is the result
+# 09 · Forecast backtesting — the baseline is the result (NumPy, pandas, Matplotlib)
 
 **604 trading days of a real wholesaler's revenue, 60 rolling folds, 7-day horizon.**
 

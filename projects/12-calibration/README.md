@@ -1,4 +1,4 @@
-# 12 · Calibration — what 0.70 actually means
+# 12 · Calibration — what 0.70 actually means (NumPy, pandas, Matplotlib, scikit-learn)
 
 **45,211 real phone calls. Four models. One of them would double your loan-loss provision.**
 

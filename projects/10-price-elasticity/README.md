@@ -1,4 +1,4 @@
-# 10 · Price elasticity — the confounder that reverses the business decision
+# 10 · Price elasticity — the confounder that reverses the business decision (NumPy, pandas, Matplotlib)
 
 **63,011 product-months across 3,739 real products.**
 

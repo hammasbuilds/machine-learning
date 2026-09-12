@@ -1,4 +1,4 @@
-# 03 · Imbalanced failure prediction — 96.6% accuracy is the floor, not the ceiling
+# 03 · Imbalanced failure prediction — 96.6% accuracy is the floor, not the ceiling (NumPy, pandas, Matplotlib, scikit-learn)
 
 **10,000 real machine cycles, 339 failures (3.39%).**
 

@@ -1,4 +1,4 @@
-# machine-learning
+# machine-learning (NumPy, pandas, scikit-learn, statsmodels)
 
 [![python](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
 ![tests](https://img.shields.io/badge/tests-176%20passing-success)

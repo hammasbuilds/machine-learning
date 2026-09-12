@@ -1,4 +1,4 @@
-# 19 · Regularisation — "the model selected these features" is not a finding
+# 19 · Regularisation — "the model selected these features" is not a finding (NumPy, pandas, Matplotlib, scikit-learn)
 
 **10,000 machine cycles, 14 features engineered from 5 sensors, 3.39% failure rate.**
 

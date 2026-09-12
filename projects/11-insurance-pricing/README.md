@@ -1,4 +1,4 @@
-# 11 · Insurance pricing — the one argument that breaks the price
+# 11 · Insurance pricing — the one argument that breaks the price (NumPy, pandas, Matplotlib, statsmodels)
 
 **678,013 real French motor policies. 358,360 policy-years of exposure. 26,639 claims.**
 

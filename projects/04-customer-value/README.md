@@ -1,4 +1,4 @@
-# 04 · Customer value — nobody is average
+# 04 · Customer value — nobody is average (NumPy, pandas, Matplotlib)
 
 **1,055,823 real invoice lines. 5,876 customers. Two years.**
 

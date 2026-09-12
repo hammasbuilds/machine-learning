@@ -1,4 +1,4 @@
-# 08 · Overlapping windows — how t = 13.75 becomes t = 1.15
+# 08 · Overlapping windows — how t = 13.75 becomes t = 1.15 (NumPy, pandas, Matplotlib, SciPy)
 
 **145 years of Shiller's S&P 500 data.** Does valuation predict long-run returns?
 

@@ -1,4 +1,4 @@
-# 18 · Target encoding — the leak inside a single column
+# 18 · Target encoding — the leak inside a single column (NumPy, pandas, Matplotlib, scikit-learn)
 
 **1,055,823 invoice lines, 4,747 stock codes, temporal split.** Predict whether a line is a
 return.

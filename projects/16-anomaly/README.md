@@ -1,4 +1,4 @@
-# 16 · Anomaly detection — the question it cannot answer
+# 16 · Anomaly detection — the question it cannot answer (NumPy, pandas, Matplotlib, scikit-learn)
 
 **10,000 machine cycles, 339 failures. Detectors see five sensors and no labels.**
 

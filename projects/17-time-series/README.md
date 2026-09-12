@@ -1,4 +1,4 @@
-# 17 · Time series — the decision that comes before the model
+# 17 · Time series — the decision that comes before the model (NumPy, pandas, Matplotlib, statsmodels)
 
 **1,833 months of Shiller's inflation-adjusted S&P 500, 1871 to 2023.**
 

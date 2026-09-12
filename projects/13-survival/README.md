@@ -1,4 +1,4 @@
-# 13 · Survival analysis — the customers you must not call negatives
+# 13 · Survival analysis — the customers you must not call negatives (NumPy, pandas, Matplotlib, SciPy)
 
 **5,876 real customers. Time from first purchase to second.**
 

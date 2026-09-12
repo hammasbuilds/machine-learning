@@ -1,4 +1,4 @@
-# 05 · Target leakage — the 0.93 that becomes 0.63
+# 05 · Target leakage — the 0.93 that becomes 0.63 (NumPy, pandas, Matplotlib, scikit-learn)
 
 **45,211 real phone calls offering a term deposit.** The published benchmark for this
 dataset is around 0.93 ROC-AUC. Fix two things and it is 0.63.

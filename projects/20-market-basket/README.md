@@ -1,4 +1,4 @@
-# 20 · Market basket — what a shuffled shop looks like
+# 20 · Market basket — what a shuffled shop looks like (NumPy, pandas, Matplotlib)
 
 **27,840 multi-item invoices from a UK gift wholesaler, 4,934 products, 140,810 rules.**
 

@@ -1,4 +1,4 @@
-# 14 · Recommenders — the baseline nobody wants to run
+# 14 · Recommenders — the baseline nobody wants to run (NumPy, pandas, Matplotlib)
 
 **1M real transactions. 5,016 customers × 3,641 products. 3.3% of the matrix observed.**
 

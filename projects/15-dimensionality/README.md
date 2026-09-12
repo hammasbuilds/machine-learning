@@ -1,4 +1,4 @@
-# 15 · Dimensionality reduction — what each method destroys
+# 15 · Dimensionality reduction — what each method destroys (NumPy, pandas, Matplotlib, scikit-learn)
 
 **700 customers × 120 products. Five reductions of the same matrix.**
 

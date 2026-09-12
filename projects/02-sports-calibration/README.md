@@ -1,4 +1,4 @@
-# 02 · Sports forecasting — accuracy is the wrong question
+# 02 · Sports forecasting — accuracy is the wrong question (NumPy, pandas, Matplotlib)
 
 **3,420 Premier League matches, nine seasons, against the closing odds.**
 

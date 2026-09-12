@@ -1,4 +1,4 @@
-# 01 · Backtest overfitting
+# 01 · Backtest overfitting (NumPy, pandas, Matplotlib, SciPy)
 
 **Searching 846 trading rules on the S&P 500 found a winner. Searching the same 846 rules
 on *shuffled* S&P 500 data found a better one.**

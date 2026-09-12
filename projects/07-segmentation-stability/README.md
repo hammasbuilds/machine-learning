@@ -1,4 +1,4 @@
-# 07 · Customer segments — do they survive being asked twice?
+# 07 · Customer segments — do they survive being asked twice? (NumPy, pandas, Matplotlib, scikit-learn)
 
 **5,839 real customers, three RFM features.** Every marketing deck has five segments with
 names like "Loyal Champions". k-means will return five segments from any data you give it,
