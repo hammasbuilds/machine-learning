@@ -99,3 +99,9 @@ than naive OLS and it is not the honest answer.
 **The disjoint estimate has fourteen points, and that is the actual state of the evidence.**
 It is tempting to read `n=14` as a failure of method. It is not. It is what 145 years of
 monthly data contains once you stop counting the same decade 120 times.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Newey, W.K. and West, K.D. (1987). "A Simple, Positive Semi-Definite, Heteroskedasticity and Autocorrelation Consistent Covariance Matrix." *Econometrica*, 55(3), 703-708.

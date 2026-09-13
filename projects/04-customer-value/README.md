@@ -86,3 +86,9 @@ of an xlsx, and found a different zip. Clear once read, opaque for a minute befo
 Using the final date gives the most recent buyer a recency of zero, which is fine until
 something divides by it. A one-day offset that costs nothing and removes a whole class of
 downstream failure.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Limpert, E., Stahel, W.A., Abbt, M. (2001). "Log-normal Distributions across the Sciences: Keys and Clues." *BioScience*, 51(5), 341-352. (why the arithmetic mean misleads under the right-skewed distributions this project's real invoice data actually shows)

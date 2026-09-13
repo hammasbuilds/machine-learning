@@ -110,3 +110,10 @@ small train-test gap is evidence of nothing when the leak crosses the split.
 **The split is temporal, not random.** A random split on transaction data would let the model
 see a stock code's future return rate, which is a second leak on top of the one being
 measured. The cut is at 75% of the time axis.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Micci-Barreca, D. (2001). "A Preprocessing Scheme for High-Cardinality Categorical Attributes in Classification and Prediction Problems." *ACM SIGKDD Explorations*, 3(1), 27-32. (target/mean encoding)
+- See also Kaufman et al. (2012) cited in [project 05](../05-leakage/README.md) — the same leakage principle, one column instead of one feature.

@@ -107,3 +107,11 @@ Reuses the cached retail data from [project 04](../04-customer-value/). Around t
   as measured rather than tuned until it looked better.
 - **Trustworthiness is O(n²)** and runs on 700 points. It does not scale, and neither does
   the pure-numpy t-SNE input.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Pearson, K. (1901). "On Lines and Planes of Closest Fit to Systems of Points in Space." *Philosophical Magazine*, 2(11), 559-572. (PCA)
+- van der Maaten, L. and Hinton, G. (2008). "Visualizing Data using t-SNE." *Journal of Machine Learning Research*, 9, 2579-2605.
+- Venna, J. and Kaski, S. (2001). "Neighborhood Preservation in Nonlinear Projection Methods: An Experimental Study." *ICANN*. (the trustworthiness metric used to score both methods here)

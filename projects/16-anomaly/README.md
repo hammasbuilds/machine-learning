@@ -103,3 +103,11 @@ those.
 It is set to roughly 1.5× the true failure rate, which in a genuinely unlabelled setting you
 would not know. That parameter is exactly the label information the method claims not to
 need, entering through a side door — worth naming, since it is almost never mentioned.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Mahalanobis, P.C. (1936). "On the Generalised Distance in Statistics." *Proceedings of the National Institute of Sciences of India*, 2(1), 49-55.
+- Liu, F.T., Ting, K.M., Zhou, Z.H. (2008). "Isolation Forest." *Proceedings of IEEE ICDM*.
+- Breunig, M.M., Kriegel, H.P., Ng, R.T., Sander, J. (2000). "LOF: Identifying Density-Based Local Outliers." *Proceedings of ACM SIGMOD*.

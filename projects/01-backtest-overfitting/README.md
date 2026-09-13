@@ -121,3 +121,10 @@ to come out close, which would have made the point. They came out *inverted*, wh
 it better — and it is worth being clear that this is one shuffle seed on one index over one
 nine-year window, not a law of nature. The claim being made is "these are
 indistinguishable", not "noise is better than markets."
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Bailey, D.H. and López de Prado, M. (2014). "The Deflated Sharpe Ratio: Correcting for Selection Bias, Backtest Overfitting, and Non-Normality." *Journal of Portfolio Management*, 40(5), 94-107.
+- Bailey, D.H., Borwein, J., López de Prado, M., Zhu, Q.J. (2014). "Pseudo-Mathematics and Financial Charlatanism: The Effects of Backtest Overfitting on Out-of-Sample Performance." *Notices of the American Mathematical Society*, 61(5), 458-471.

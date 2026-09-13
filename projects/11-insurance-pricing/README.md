@@ -139,3 +139,10 @@ First run fetches 36 MB (frequency) + 377 KB (severity). Around two minutes.
   worse than either factor alone implies. Every factor here is additive in the log.
 - **Tweedie's power is fixed at 1.5** rather than estimated. Estimating it would change the
   fit slightly and not the decomposition argument, which is the point being made.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- McCullagh, P. and Nelder, J.A. (1989). *Generalized Linear Models* (2nd ed.). Chapman and Hall. (the offset-term GLM formulation this project's exposure argument depends on)
+- Noll, A., Salzmann, R., Wüthrich, M.V. (2018). "Case Study: French Motor Third-Party Liability Claims." (working paper) — documents the real French motor claims dataset this project uses.

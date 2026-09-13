@@ -122,3 +122,10 @@ it appears in.
 any fixed significance threshold, thousands clear it by chance — the same arithmetic as
 [project 01](../01-backtest-overfitting/), in a field whose standard tooling has no notion of
 it. The permutation null is the correction, and it is not in any of the popular libraries.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Agrawal, R. and Srikant, R. (1994). "Fast Algorithms for Mining Association Rules." *Proceedings of VLDB*.
+- Brin, S., Motwani, R., Silverstein, C. (1997). "Beyond Market Baskets: Generalizing Association Rules to Correlations." *Proceedings of ACM SIGMOD*. (introduces lift, the metric this project's whole comparison runs on)

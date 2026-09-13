@@ -109,3 +109,10 @@ the kind of finding project 01 exists to discount.
 **ARIMA orders are fixed, not searched.** Searching `(p,d,q)` per fold and reporting the best
 would inflate every number here. The order is pinned to two common choices and refitted —
 the honest version, and the reason ARIMA does not look better than it is.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Box, G.E.P. and Jenkins, G.M. (1970). *Time Series Analysis: Forecasting and Control*. Holden-Day.
+- Dickey, D.A. and Fuller, W.A. (1979). "Distribution of the Estimators for Autoregressive Time Series with a Unit Root." *Journal of the American Statistical Association*, 74(366a), 427-431. (the stationarity test behind this project's central question)

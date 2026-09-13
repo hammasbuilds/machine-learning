@@ -106,3 +106,9 @@ famous column.
 **My own module docstring predicted 0.79 and 0.93 before anything was run.** The measured
 figures were 0.810 and 0.934. Recorded because the prediction was made in writing first,
 and a guess that survives contact with the data is worth more than one written afterwards.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Kaufman, S., Rosset, S., Perlich, C., Stitelman, O. (2012). "Leakage in Data Mining: Formulation, Detection, and Avoidance." *ACM Transactions on Knowledge Discovery from Data*, 6(4), Article 15.

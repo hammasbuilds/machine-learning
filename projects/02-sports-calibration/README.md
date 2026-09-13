@@ -108,3 +108,10 @@ assigns probability 0 to draws and away wins, so `log(0)` is `-inf` and only the
 floor keeps it finite. It is left in the table as a reminder that log loss is unbounded
 below and one overconfident zero can dominate a whole season — which is precisely why it
 punishes confident mistakes harder than Brier does.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Brier, G.W. (1950). "Verification of Forecasts Expressed in Terms of Probability." *Monthly Weather Review*, 78(1), 1-3.
+- Elo, A.E. (1978). *The Rating of Chessplayers, Past and Present*. Arco Publishing.

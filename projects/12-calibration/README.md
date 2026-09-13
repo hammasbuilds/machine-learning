@@ -127,3 +127,10 @@ roughly that difference. Chasing it to zero would mean fitting the test set.
 EUR 8,000 and 45% LGD are stated at the top of `run.py` as constants, not buried. Change
 them and the absolute figures move; the +101% does not, because it is a property of the
 probabilities rather than of the money.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Platt, J. (1999). "Probabilistic Outputs for Support Vector Machines and Comparisons to Regularized Likelihood Methods." *Advances in Large Margin Classifiers*, MIT Press.
+- Zadrozny, B. and Elkan, C. (2002). "Transforming Classifier Scores into Accurate Multiclass Probability Estimates." *Proceedings of ACM SIGKDD*.

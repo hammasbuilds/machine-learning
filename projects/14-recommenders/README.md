@@ -106,3 +106,10 @@ common case.)*
   would actually be clicked, and no offline benchmark can.
 - **No cold start.** New users and new items are excluded rather than handled. That is the
   half of the problem a production system spends most of its time on.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Hu, Y., Koren, Y., Volinsky, C. (2008). "Collaborative Filtering for Implicit Feedback Datasets." *Proceedings of IEEE ICDM*.
+- Koren, Y., Bell, R., Volinsky, C. (2009). "Matrix Factorization Techniques for Recommender Systems." *IEEE Computer*, 42(8), 30-37.

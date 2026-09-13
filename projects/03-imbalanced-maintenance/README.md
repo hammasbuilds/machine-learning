@@ -128,3 +128,10 @@ It scores all 3,000 cycles identically at zero, so the ranking is arbitrary and 
 integration picks up whatever order the array happened to be in. It is a degenerate input,
 not a bug, and it is left in the table because a metric that cannot be gamed by a constant
 is exactly the property being demonstrated.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- He, H. and Garcia, E.A. (2009). "Learning from Imbalanced Data." *IEEE Transactions on Knowledge and Data Engineering*, 21(9), 1263-1284.
+- Provost, F., Fawcett, T., Kohavi, R. (1998). "The Case Against Accuracy Estimation for Comparing Induction Algorithms." *Proceedings of ICML*.

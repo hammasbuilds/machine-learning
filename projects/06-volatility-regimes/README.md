@@ -100,3 +100,9 @@ The thresholds are the ones chosen before seeing any output.
 flickers that every method catches instantly and nobody trades. Splitting out the 24
 episodes lasting 20+ days was the right analysis, and it gave the same answer — which is
 the only reason it is reported rather than being a second bite at the cherry.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Hamilton, J.D. (1989). "A New Approach to the Economic Analysis of Nonstationary Time Series and the Business Cycle." *Econometrica*, 57(2), 357-384. (the regime-switching framework this project's negative result is tested against)

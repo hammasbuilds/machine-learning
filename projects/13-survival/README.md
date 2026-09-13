@@ -139,3 +139,9 @@ Reuses the cached retail data from [project 04](../04-customer-value/). Around 4
 - **Proportional hazards is assumed, not tested.** Cox assumes hazard ratios are constant
   over time. A Schoenfeld residual test would check it; it isn't here, and that is a gap
   rather than a decision.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Kaplan, E.L. and Meier, P. (1958). "Nonparametric Estimation from Incomplete Observations." *Journal of the American Statistical Association*, 53(282), 457-481.

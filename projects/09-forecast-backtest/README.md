@@ -104,3 +104,9 @@ is not in the table.
 than the flat mean and uses them to fit a pattern that a 7-day horizon averages away. The
 result was not obvious in advance, which is the argument for running the baseline before
 building anything.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Hyndman, R.J. and Koehler, A.B. (2006). "Another Look at Measures of Forecast Accuracy." *International Journal of Forecasting*, 22(4), 679-688. (introduces MASE, the metric this project's whole comparison runs on)

@@ -106,3 +106,10 @@ That turned out to be the better finding. A sign flip is obviously wrong and som
 catch it. **An elasticity of 0.77 looks completely reasonable, is precisely estimated with a
 t of 108, and tells you to do the opposite of the right thing.** Plausible wrong answers do
 more damage than absurd ones.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Mundlak, Y. (1978). "On the Pooling of Time Series and Cross Section Data." *Econometrica*, 46(1), 69-85. (the fixed-effects argument this project's within-product estimate is built on)
+- Simpson, E.H. (1951). "The Interpretation of Interaction in Contingency Tables." *Journal of the Royal Statistical Society, Series B*, 13(2), 238-241. (the confounding pattern the pooled-vs-within estimates demonstrate)

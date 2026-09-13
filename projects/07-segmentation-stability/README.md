@@ -107,3 +107,10 @@ run a null that nobody runs.
 measured rather than smoothed away. A plausible story is that k=9 happens to align with a
 natural split the other values cut across, but it is a story, and one run of one dataset is
 not enough to tell it.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Rousseeuw, P.J. (1987). "Silhouettes: A Graphical Aid to the Interpretation and Validation of Cluster Analysis." *Journal of Computational and Applied Mathematics*, 20, 53-65.
+- Hubert, L. and Arabie, P. (1985). "Comparing Partitions." *Journal of Classification*, 2(1), 193-218. (the Adjusted Rand Index used here to test reseed/resample stability)

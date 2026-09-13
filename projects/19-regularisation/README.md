@@ -123,3 +123,11 @@ correspondingly ~0.01 below the achievable best.
 production order. It changes little here (the process is stationary by construction), but a
 shuffled split on machine data is the [project 05](../05-leakage/) mistake and the habit is
 worth keeping.
+
+## References
+
+The statistical method this project implements and tests against real data comes from:
+
+- Hoerl, A.E. and Kennard, R.W. (1970). "Ridge Regression: Biased Estimation for Nonorthogonal Problems." *Technometrics*, 12(1), 55-67.
+- Tibshirani, R. (1996). "Regression Shrinkage and Selection via the Lasso." *Journal of the Royal Statistical Society, Series B*, 58(1), 267-288.
+- Zou, H. and Hastie, T. (2005). "Regularization and Variable Selection via the Elastic Net." *Journal of the Royal Statistical Society, Series B*, 67(2), 301-320.
