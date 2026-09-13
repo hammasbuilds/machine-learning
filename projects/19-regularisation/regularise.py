@@ -104,8 +104,14 @@ def regularisation_path(
     rows = []
     for C in strengths:
         fit = fit_penalised(
-            X_train, y_train, X_test, y_test, columns,
-            name=f"C={C:g}", penalty=penalty, C=C,
+            X_train,
+            y_train,
+            X_test,
+            y_test,
+            columns,
+            name=f"C={C:g}",
+            penalty=penalty,
+            C=C,
         )
         for column, coefficient in zip(columns, fit.coefficients, strict=True):
             rows.append(
@@ -148,9 +154,9 @@ def bootstrap_selection(
         while len(np.unique(y[index])) < 2:
             index = rng.integers(0, n, size=n)
 
-        model = LogisticRegression(
-            penalty="l1", C=C, solver="saga", max_iter=3000, tol=1e-3
-        ).fit(X[index], y[index])
+        model = LogisticRegression(penalty="l1", C=C, solver="saga", max_iter=3000, tol=1e-3).fit(
+            X[index], y[index]
+        )
         coefficients = model.coef_.ravel()
         selections[replicate] = np.abs(coefficients) > 1e-6
         signs[replicate] = np.sign(coefficients)
@@ -197,9 +203,9 @@ def pairwise_stability(
         index = rng.integers(0, n, size=n)
         while len(np.unique(y[index])) < 2:
             index = rng.integers(0, n, size=n)
-        model = LogisticRegression(
-            penalty="l1", C=C, solver="saga", max_iter=3000, tol=1e-3
-        ).fit(X[index], y[index])
+        model = LogisticRegression(penalty="l1", C=C, solver="saga", max_iter=3000, tol=1e-3).fit(
+            X[index], y[index]
+        )
         sets.append(np.abs(model.coef_.ravel()) > 1e-6)
 
     return np.array(

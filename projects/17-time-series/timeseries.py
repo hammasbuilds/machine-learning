@@ -64,7 +64,9 @@ class StationarityVerdict:
         return "stationary" if self.adf_says_stationary else "non-stationary"
 
 
-def stationarity_verdict(values: np.ndarray, name: str, *, alpha: float = 0.05) -> StationarityVerdict:
+def stationarity_verdict(
+    values: np.ndarray, name: str, *, alpha: float = 0.05
+) -> StationarityVerdict:
     """Run both tests and report the disagreement rather than picking a favourite."""
     values = np.asarray(values, dtype=float)
     values = values[np.isfinite(values)]

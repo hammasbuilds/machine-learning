@@ -17,7 +17,10 @@ dependencies = [
 boost = ["lightgbm>=4.5"]
 
 [dependency-groups]
-dev = ["pytest>=8", "ruff>=0.6"]
+# ruff is pinned to a minor range, not ">=": the *formatter* changes between minor
+# versions, so an open bound means CI reformats differently from whatever version the
+# code was committed with and the Lint step fails on untouched files.
+dev = ["pytest>=8", "ruff>=0.16,<0.17"]
 
 [build-system]
 requires = ["hatchling"]

@@ -57,7 +57,9 @@ def item_counts(baskets: list[frozenset]) -> Counter:
     return counts
 
 
-def pair_counts(baskets: list[frozenset], *, keep: set | None = None, max_basket: int = 60) -> Counter:
+def pair_counts(
+    baskets: list[frozenset], *, keep: set | None = None, max_basket: int = 60
+) -> Counter:
     """Co-occurrence counts for every pair, restricted to items worth counting.
 
     `max_basket` drops the handful of enormous baskets - wholesale orders of two hundred
@@ -139,8 +141,12 @@ def build_rules(
 
 
 def permutation_null(
-    baskets: list[frozenset], *, replicates: int = 20, top_items: int = 400,
-    min_support_count: int = 5, seed: int = 0,
+    baskets: list[frozenset],
+    *,
+    replicates: int = 20,
+    top_items: int = 400,
+    min_support_count: int = 5,
+    seed: int = 0,
 ) -> pd.DataFrame:
     """Destroy every real association, keep the basket sizes, and see what lift still appears.
 
@@ -188,10 +194,7 @@ def holdout_check(rules: pd.DataFrame, later: list[frozenset], *, top: int = 50)
     counts = item_counts(later)
     n = len(later)
     together: Counter = Counter()
-    wanted = {
-        frozenset((r.antecedent, r.consequent))
-        for r in rules.head(top).itertuples()
-    }
+    wanted = {frozenset((r.antecedent, r.consequent)) for r in rules.head(top).itertuples()}
 
     for basket in later:
         for pair in wanted:

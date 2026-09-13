@@ -205,8 +205,14 @@ def test_lasso_keeps_one_of_a_correlated_pair_and_drops_the_other():
     X, y, columns = _correlated_design()
     split = len(y) // 2
     fit = fit_penalised(
-        X[:split], y[:split], X[split:], y[split:], columns,
-        name="lasso", penalty="l1", C=0.05,
+        X[:split],
+        y[:split],
+        X[split:],
+        y[split:],
+        columns,
+        name="lasso",
+        penalty="l1",
+        C=0.05,
     )
     kept = {c for c, k in zip(columns, fit.selected, strict=True) if k}
     # Exactly one of the two near-duplicates survives.
@@ -217,10 +223,12 @@ def test_ridge_and_lasso_score_the_same_while_selecting_differently():
     """The comparison the project turns on: prediction is stable, explanation is not."""
     X, y, columns = _correlated_design(seed=2)
     split = len(y) // 2
-    ridge = fit_penalised(X[:split], y[:split], X[split:], y[split:], columns,
-                          name="ridge", penalty="l2", C=0.05)
-    lasso = fit_penalised(X[:split], y[:split], X[split:], y[split:], columns,
-                          name="lasso", penalty="l1", C=0.05)
+    ridge = fit_penalised(
+        X[:split], y[:split], X[split:], y[split:], columns, name="ridge", penalty="l2", C=0.05
+    )
+    lasso = fit_penalised(
+        X[:split], y[:split], X[split:], y[split:], columns, name="lasso", penalty="l1", C=0.05
+    )
 
     assert abs(ridge.test_auc - lasso.test_auc) < 0.02
     assert lasso.n_selected < ridge.n_selected
@@ -318,9 +326,7 @@ def test_holdout_check_reports_rules_that_stop_holding():
 
 
 def test_baskets_are_sets_so_quantity_cannot_inflate_a_pair():
-    frame = pd.DataFrame(
-        {"Invoice": ["1"] * 5, "Description": ["a", "a", "a", "b", "b"]}
-    )
+    frame = pd.DataFrame({"Invoice": ["1"] * 5, "Description": ["a", "a", "a", "b", "b"]})
     baskets = build_baskets(frame, basket_col="Invoice", item_col="Description")
     assert baskets == [frozenset({"a", "b"})]
     assert pair_counts(baskets)[("a", "b")] == 1

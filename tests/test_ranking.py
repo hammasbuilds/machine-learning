@@ -71,9 +71,7 @@ def _held_out(data, seed: int = 0) -> dict:
     """
     rng = np.random.default_rng(seed)
     half = data.n_items // 2
-    return {
-        user: {int(rng.integers(0, half) + (user % 2) * half)} for user in range(data.n_users)
-    }
+    return {user: {int(rng.integers(0, half) + (user % 2) * half)} for user in range(data.n_users)}
 
 
 def test_popularity_is_a_real_baseline_not_a_formality():
@@ -256,9 +254,7 @@ def test_detectors_disagree_on_what_is_unusual():
     rng = np.random.default_rng(11)
     # Two groups of genuinely different density - the case that separates local from global.
     X = np.vstack([rng.normal(size=(600, 3)), rng.normal(scale=0.15, size=(200, 3)) + 4.0])
-    scores = {
-        d.name: d.fit_score(X) for d in (Isolation(contamination=0.05), LOF(), Mahalanobis())
-    }
+    scores = {d.name: d.fit_score(X) for d in (Isolation(contamination=0.05), LOF(), Mahalanobis())}
     overlaps = [a.overlap for a in agreement_matrix(scores, k=80)]
     assert min(overlaps) < 0.6  # they do not pick the same 80 points
 

@@ -97,7 +97,11 @@ class TrainOnlyEncoder:
     smoothing: float = 0.0
 
     def fit_transform(
-        self, train: np.ndarray, train_y: np.ndarray, test: np.ndarray, test_y: np.ndarray  # noqa: ARG002
+        self,
+        train: np.ndarray,
+        train_y: np.ndarray,
+        test: np.ndarray,
+        test_y: np.ndarray,  # noqa: ARG002
     ) -> tuple[np.ndarray, np.ndarray]:
         prior = float(train_y.mean())
         lookup = category_means(train, train_y, prior=prior, smoothing=self.smoothing)
@@ -138,7 +142,11 @@ class OutOfFoldEncoder:
         self.name = f"Out-of-fold ({folds} folds)"
 
     def fit_transform(
-        self, train: np.ndarray, train_y: np.ndarray, test: np.ndarray, test_y: np.ndarray  # noqa: ARG002
+        self,
+        train: np.ndarray,
+        train_y: np.ndarray,
+        test: np.ndarray,
+        test_y: np.ndarray,  # noqa: ARG002
     ) -> tuple[np.ndarray, np.ndarray]:
         prior = float(train_y.mean())
         encoded_train = np.full(len(train), prior)
@@ -148,9 +156,7 @@ class OutOfFoldEncoder:
             lookup = category_means(
                 train[inner_fit], train_y[inner_fit], prior=prior, smoothing=self.smoothing
             )
-            encoded_train[inner_encode] = [
-                lookup.get(c, prior) for c in train[inner_encode]
-            ]
+            encoded_train[inner_encode] = [lookup.get(c, prior) for c in train[inner_encode]]
 
         # Test rows are encoded from the full training set, which is correct: at serving time
         # all the training data is available and none of the test row's target is.
