@@ -1,9 +1,26 @@
-# machine-learning (NumPy, pandas, scikit-learn, statsmodels)
+<h1 align="center">machine-learning</h1>
+<p align="center"><i>Twenty projects, each built around the mistake that makes its answer wrong</i></p>
 
-[![python](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
-![tests](https://img.shields.io/badge/tests-176%20passing-success)
-![data](https://img.shields.io/badge/data-public%20only-success)
-![license](https://img.shields.io/badge/license-MIT-green)
+<p align="center">
+  <a href="#the-through-line">The through-line</a> &middot;
+  <a href="#the-twenty">The twenty</a> &middot;
+  <a href="#data">Data</a> &middot;
+  <a href="#on-charts">On charts</a> &middot;
+  <a href="#where-i-was-wrong">Where I was wrong</a> &middot;
+  <a href="#running-it">Running it</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/hammas159/machine-learning/actions/workflows/ci.yml"><img src="https://github.com/hammas159/machine-learning/actions/workflows/ci.yml/badge.svg" alt="ci"></a>
+  <a href="https://www.python.org"><img src="https://img.shields.io/badge/python-3.11%2B-blue" alt="python"></a>
+  <img src="https://img.shields.io/badge/projects-20-brightgreen" alt="projects">
+  <img src="https://img.shields.io/badge/tests-176%20passing-success" alt="tests">
+  <img src="https://img.shields.io/badge/data-public%20only-success" alt="data">
+  <img src="https://img.shields.io/badge/stack-NumPy%20%C2%B7%20pandas%20%C2%B7%20scikit--learn%20%C2%B7%20statsmodels-orange" alt="stack">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license"></a>
+</p>
+
+---
 
 **Twenty machine-learning projects on public data. Each one is built around the mistake that
 makes its answer wrong.**
@@ -31,6 +48,24 @@ Most of these projects fail in the same way, and it is not a modelling failure:
 | 20 | Association rules | 140,810 "rules" | 4.3% that chance couldn't produce |
 
 In every case the arithmetic downstream was perfect.
+
+### The same failure, drawn
+
+```mermaid
+flowchart LR
+    A["real public dataset"] --> B["a model is fitted"]
+    B --> C["arithmetic is correct"]
+    C --> D{"how many observations<br/>are actually independent?"}
+    D -->|"counted rows"| E["confident wrong answer"]
+    D -->|"counted the real<br/>unit of variation"| F["honest, smaller number"]
+
+    style E fill:#dc2626,color:#fff
+    style F fill:#16a34a,color:#fff
+```
+
+The arithmetic downstream is perfect in every case. The error is upstream, in what was
+treated as an independent observation - and it is invisible to any amount of model tuning.
+
 
 ## The twenty
 
@@ -218,6 +253,17 @@ naming here:
   by 0.0001, not the headline I'd assumed.
 - **06, 07, 09, 10** — four predictions about what the data would show; three were wrong and
   the READMEs say so rather than quietly reframing the question.
+
+## Keywords
+
+machine learning &middot; statistics &middot; data leakage &middot; target leakage &middot;
+backtest overfitting &middot; deflated Sharpe ratio &middot; multiple comparisons &middot;
+spurious regression &middot; overlapping windows &middot; class imbalance &middot;
+base rate fallacy &middot; price elasticity &middot; target encoding &middot;
+association rules &middot; survivorship bias &middot; scikit-learn &middot; pandas &middot;
+NumPy &middot; statsmodels &middot; reproducible research &middot; public datasets &middot;
+UCI &middot; Shiller &middot; CBOE VIX &middot; applied statistics &middot; model validation
+
 
 ## License
 
