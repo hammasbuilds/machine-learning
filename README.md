@@ -69,103 +69,56 @@ treated as an independent observation - and it is invisible to any amount of mod
 
 ## The twenty
 
+
 ### Quant and trading
 
-**[01 · Backtest overfitting](projects/01-backtest-overfitting/)** ⭐
-846 trading rules on the real S&P 500 found a winner at Sharpe 0.620. The same 846 rules on
-**shuffled** S&P 500 found a better one at 0.695. Deflated Sharpe Ratio says the probability
-the edge is real is **23.5%**.
+| # | Project | Headline finding | Status |
+|---:|---|---|:--:|
+| [01](projects/01-backtest-overfitting/) | [**Backtest overfitting**](projects/01-backtest-overfitting/) ⭐ | 846 trading rules on the real S&P 500 found a winner at Sharpe 0.620. The same 846 rules on **shuffled** S&P 500 found a better one at 0.695. Deflated Sharpe Ratio says the probability the edge is real is **23.5%**. | ✅ |
+| [06](projects/06-volatility-regimes/) | [**Volatility regimes**](projects/06-volatility-regimes/) | 35 years of VIX. Set out to prove hindsight bias in regime labelling; **both hypotheses failed** — real-time labelling agrees with hindsight 89.5% of the time. Reported as measured. | ✅ |
+| [08](projects/08-overlapping-windows/) | [**Overlapping windows**](projects/08-overlapping-windows/) ⭐ | Does valuation predict returns? Naive OLS: **t = −13.75**. Disjoint windows: **t = −1.15**. Same data, same slope. The inflation factor is 12.0; `sqrt(120) = 11.0`. | ✅ |
+| [17](projects/17-time-series/) | [**Time series**](projects/17-time-series/) ⭐ | 155 years of Shiller data. Two independent random walks regressed on each other come back significant **93.7% of the time**, median \|t\| = 18.8. And on the level nothing beats predicting the last value — but difference the series and the ranking inverts completely. | ✅ |
 
-**[06 · Volatility regimes](projects/06-volatility-regimes/)**
-35 years of VIX. Set out to prove hindsight bias in regime labelling; **both hypotheses
-failed** — real-time labelling agrees with hindsight 89.5% of the time. Reported as measured.
-
-**[08 · Overlapping windows](projects/08-overlapping-windows/)** ⭐
-Does valuation predict returns? Naive OLS: **t = −13.75**. Disjoint windows: **t = −1.15**.
-Same data, same slope. The inflation factor is 12.0; `sqrt(120) = 11.0`.
-
-**[17 · Time series](projects/17-time-series/)** ⭐
-155 years of Shiller data. Two independent random walks regressed on each other come back
-significant **93.7% of the time**, median |t| = 18.8. And on the level nothing beats
-predicting the last value — but difference the series and the ranking inverts completely.
 
 ### Industry and operations
 
-**[03 · Imbalanced failure prediction](projects/03-imbalanced-maintenance/)**
-10,000 machine cycles, 3.4% failures. A model that predicts "no failure" scores **97.97%
-accuracy**. ROC-AUC calls two models close; average precision says one is twice as good.
+| # | Project | Headline finding | Status |
+|---:|---|---|:--:|
+| [03](projects/03-imbalanced-maintenance/) | [**Imbalanced failure prediction**](projects/03-imbalanced-maintenance/) | 10,000 machine cycles, 3.4% failures. A model that predicts "no failure" scores **97.97% accuracy**. ROC-AUC calls two models close; average precision says one is twice as good. | ✅ |
+| [09](projects/09-forecast-backtest/) | [**Forecast backtesting**](projects/09-forecast-backtest/) | 604 trading days, 60 rolling folds. A **flat 28-day mean beats both models that know about the weekly cycle** — at a 7-day horizon the weekday shape averages away. | ✅ |
+| [16](projects/16-anomaly/) | [**Anomaly detection**](projects/16-anomaly/) | Three detectors, no labels. Mahalanobis — invented in 1936, no hyperparameters — wins at **12.4× lift**. But 81% of *power* failures are caught and **4% of heat-dissipation failures**: "anomalous" and "the failure I care about" are different sets. | ✅ |
+| [19](projects/19-regularisation/) | [**Regularisation**](projects/19-regularisation/) ⭐ | Ridge, lasso, elastic net and no penalty score within **0.0023 AUC** of each other while keeping 14, 7, 10 and 14 features. `temp_difference` survives 100% of bootstraps; `temp_ratio`, correlated with it at **0.999**, survives 7.5%. | ✅ |
 
-**[09 · Forecast backtesting](projects/09-forecast-backtest/)**
-604 trading days, 60 rolling folds. A **flat 28-day mean beats both models that know about
-the weekly cycle** — at a 7-day horizon the weekday shape averages away.
-
-**[16 · Anomaly detection](projects/16-anomaly/)**
-Three detectors, no labels. Mahalanobis — invented in 1936, no hyperparameters — wins at
-**12.4× lift**. But 81% of *power* failures are caught and **4% of heat-dissipation
-failures**: "anomalous" and "the failure I care about" are different sets.
-
-**[19 · Regularisation](projects/19-regularisation/)** ⭐
-Ridge, lasso, elastic net and no penalty score within **0.0023 AUC** of each other while
-keeping 14, 7, 10 and 14 features. `temp_difference` survives 100% of bootstraps;
-`temp_ratio`, correlated with it at **0.999**, survives 7.5%.
 
 ### Marketing and customers
 
-**[04 · Customer value](projects/04-customer-value/)**
-1,055,823 invoice lines. Mean value £2,844, median £855 — **the mean sits at the 80th
-percentile**. The top 1% of customers produce 31% of revenue.
+| # | Project | Headline finding | Status |
+|---:|---|---|:--:|
+| [04](projects/04-customer-value/) | [**Customer value**](projects/04-customer-value/) | 1,055,823 invoice lines. Mean value £2,844, median £855 — **the mean sits at the 80th percentile**. The top 1% of customers produce 31% of revenue. | ✅ |
+| [05](projects/05-leakage/) | [**Target leakage**](projects/05-leakage/) ⭐ | The published benchmark for this dataset is 0.93 ROC-AUC. **Fix two things and it is 0.63.** | ✅ |
+| [07](projects/07-segmentation-stability/) | [**Segmentation stability**](projects/07-segmentation-stability/) | Shuffle every feature independently — destroying all structure, keeping all distributions — and k-means still scores a silhouette of **0.25**. Real data scores 0.33. | ✅ |
+| [10](projects/10-price-elasticity/) | [**Price elasticity**](projects/10-price-elasticity/) | Pooled: **−0.77, inelastic, raise prices.** Within-product: **−1.97, elastic, raising prices costs you money.** Same ledger, opposite instruction. | ✅ |
+| [14](projects/14-recommenders/) | [**Recommenders**](projects/14-recommenders/) | Item-item CF, ALS and the baseline nobody runs: recommend the bestsellers to everybody. Coverage and novelty are reported next to accuracy, because a recommender that shows everyone the same ten products can score respectably and sell nothing new. | ✅ |
+| [18](projects/18-encoding-leakage/) | [**Target encoding**](projects/18-encoding-leakage/) ⭐ | A column of **random integers**, target-encoded the way most tutorials show, lifts test AUC from 0.567 to **0.652**. It contains no information. And the broken encoder beats the correct one on the test set, so the standard diagnostic points the wrong way. | ✅ |
+| [20](projects/20-market-basket/) | [**Market basket**](projects/20-market-basket/) ⭐ | 140,810 association rules; 79% have lift > 1, the usual "associated" threshold. **Reshuffle the products at random and chance still produces a lift of 3.1** — only 4.3% of the real rules clear that. Remove the support floor and the top-50 rules' survival rate into the next quarter falls from 80% to 32%. | ✅ |
 
-**[05 · Target leakage](projects/05-leakage/)** ⭐
-The published benchmark for this dataset is 0.93 ROC-AUC. **Fix two things and it is 0.63.**
-
-**[07 · Segmentation stability](projects/07-segmentation-stability/)**
-Shuffle every feature independently — destroying all structure, keeping all distributions —
-and k-means still scores a silhouette of **0.25**. Real data scores 0.33.
-
-**[10 · Price elasticity](projects/10-price-elasticity/)**
-Pooled: **−0.77, inelastic, raise prices.** Within-product: **−1.97, elastic, raising prices
-costs you money.** Same ledger, opposite instruction.
-
-**[14 · Recommenders](projects/14-recommenders/)**
-Item-item CF, ALS and the baseline nobody runs: recommend the bestsellers to everybody.
-Coverage and novelty are reported next to accuracy, because a recommender that shows everyone
-the same ten products can score respectably and sell nothing new.
-
-**[18 · Target encoding](projects/18-encoding-leakage/)** ⭐
-A column of **random integers**, target-encoded the way most tutorials show, lifts test AUC
-from 0.567 to **0.652**. It contains no information. And the broken encoder beats the correct
-one on the test set, so the standard diagnostic points the wrong way.
-
-**[20 · Market basket](projects/20-market-basket/)** ⭐
-140,810 association rules; 79% have lift > 1, the usual "associated" threshold. **Reshuffle
-the products at random and chance still produces a lift of 3.1** — only 4.3% of the real
-rules clear that. Remove the support floor and the top-50 rules' survival rate into the next
-quarter falls from 80% to 32%.
 
 ### Risk, pricing and probability
 
-**[11 · Insurance pricing](projects/11-insurance-pricing/)**
-678,013 French motor policies. Poisson frequency × Gamma severity against a Tweedie, with
-`offset=log(Exposure)` — the line that turns a claim *count* model into a claim *rate* model.
+| # | Project | Headline finding | Status |
+|---:|---|---|:--:|
+| [11](projects/11-insurance-pricing/) | [**Insurance pricing**](projects/11-insurance-pricing/) | 678,013 French motor policies. Poisson frequency × Gamma severity against a Tweedie, with `offset=log(Exposure)` — the line that turns a claim *count* model into a claim *rate* model. | ✅ |
+| [12](projects/12-calibration/) | [**Calibration**](projects/12-calibration/) | Halve every predicted probability and ROC-AUC does not move by 10⁻¹². Every decision that depends on the probability changes. Platt vs isotonic, priced in money. | ✅ |
+| [13](projects/13-survival/) | [**Survival analysis**](projects/13-survival/) | **A customer who has not churned yet is not a negative — she is censored.** Kaplan-Meier, log-rank and Cox implemented directly, because the censoring logic *is* the lesson. | ✅ |
+| [15](projects/15-dimensionality/) | [**Dimensionality reduction**](projects/15-dimensionality/) | PCA, truncated SVD, NMF, t-SNE. Forget to scale and the first component reports which column was recorded in larger numbers. | ✅ |
 
-**[12 · Calibration](projects/12-calibration/)**
-Halve every predicted probability and ROC-AUC does not move by 10⁻¹². Every decision that
-depends on the probability changes. Platt vs isotonic, priced in money.
-
-**[13 · Survival analysis](projects/13-survival/)**
-**A customer who has not churned yet is not a negative — she is censored.** Kaplan-Meier,
-log-rank and Cox implemented directly, because the censoring logic *is* the lesson.
-
-**[15 · Dimensionality reduction](projects/15-dimensionality/)**
-PCA, truncated SVD, NMF, t-SNE. Forget to scale and the first component reports which column
-was recorded in larger numbers.
 
 ### Sport
 
-**[02 · Sports forecasting](projects/02-sports-calibration/)**
-3,420 Premier League matches against Pinnacle closing odds. Elo beats the base rate on every
-metric — and its value bets return **−3.38%**, worse than blindly backing favourites at
-−1.53%.
+| # | Project | Headline finding | Status |
+|---:|---|---|:--:|
+| [02](projects/02-sports-calibration/) | [**Sports forecasting**](projects/02-sports-calibration/) | 3,420 Premier League matches against Pinnacle closing odds. Elo beats the base rate on every metric — and its value bets return **−3.38%**, worse than blindly backing favourites at −1.53%. | ✅ |
+
 
 ## Data
 
